@@ -24,6 +24,8 @@ ALIASES = {
     "claudeopus48": "claude-opus-4.8",
     "claudeopus5": "claude-opus-5",
     "claudefable5": "claude-fable-5", "claudefable51": "claude-fable-5.1",
+    "fable5": "claude-fable-5", "fable51": "claude-fable-5.1",
+    "opus5": "claude-opus-5",
     # Google
     "gemini3pro": "gemini-3-pro",
     "gemini37flash": "gemini-3.7-flash", "gemini38flash": "gemini-3.8-flash",
