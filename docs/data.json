@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-13T04:10:53+00:00",
+ "generated_at": "2026-09-13T04:13:31+00:00",
  "sources": [
   {
    "id": "lmarena",
@@ -54,6 +54,15 @@
    "category": "coding",
    "data_date": "2026-09-03",
    "n_models": 14
+  },
+  {
+   "id": "cursorbench",
+   "name": "CursorBench",
+   "url": "https://cursor.com/cursorbench",
+   "what": "Ambiguous multi-file coding tasks from real Cursor sessions, score %",
+   "category": "coding",
+   "data_date": "2026-09-12",
+   "n_models": 43
   }
  ],
  "pricing": {
@@ -2125,7 +2134,8 @@
     "livebench",
     "swebench",
     "webdev",
-    "terminalbench"
+    "terminalbench",
+    "cursorbench"
    ],
    "models": [
     {
@@ -2146,7 +2156,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 1
+      "terminalbench": 1,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2157,10 +2168,10 @@
      "key": "claudefable51max",
      "name": "Claude Fable 5.1 Max",
      "org": "Anthropic",
-     "avg_rank": 1.5,
-     "n_sources": 2,
+     "avg_rank": 1.33,
+     "n_sources": 3,
      "placements": {
-      "1": 1,
+      "1": 2,
       "2": 1,
       "3": 0,
       "4": 0
@@ -2171,7 +2182,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 2,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": 1
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2196,32 +2208,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 2
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "claudeopus5max",
-     "name": "Claude Opus 5 Max",
-     "org": "Anthropic",
-     "avg_rank": 3.0,
-     "n_sources": 2,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 2,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 3,
-      "epoch": null,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 3,
-      "terminalbench": null
+      "terminalbench": 2,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2246,7 +2234,34 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 3
+      "terminalbench": 3,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claudeopus5max",
+     "name": "Claude Opus 5 Max",
+     "org": "Anthropic",
+     "avg_rank": 3.67,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 3,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 3,
+      "terminalbench": null,
+      "cursorbench": 5
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2257,8 +2272,8 @@
      "key": "claudeopus5high",
      "name": "Claude Opus 5 High",
      "org": "Anthropic",
-     "avg_rank": 4.5,
-     "n_sources": 2,
+     "avg_rank": 5.67,
+     "n_sources": 3,
      "placements": {
       "1": 0,
       "2": 1,
@@ -2271,7 +2286,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 7,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": 8
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2296,7 +2312,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 10,
-      "terminalbench": 4
+      "terminalbench": 4,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2321,7 +2338,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 6
+      "terminalbench": 6,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2346,7 +2364,34 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 8
+      "terminalbench": 8,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "musespark13max",
+     "name": "Muse Spark 1.3 Max",
+     "org": "Meta",
+     "avg_rank": 9.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": null,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 8,
+      "terminalbench": null,
+      "cursorbench": 11
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2371,7 +2416,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 6,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2396,7 +2442,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 14
+      "terminalbench": 14,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2421,7 +2468,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 9
+      "terminalbench": 9,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2446,7 +2494,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 5,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -2471,7 +2520,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 20,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2496,32 +2546,8 @@
       "livebench": 4,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "gemini38flashhigh",
-     "name": "Gemini 3.8 Flash High",
-     "org": "Google",
-     "avg_rank": 14.5,
-     "n_sources": 2,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 6,
-      "epoch": null,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 23,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2546,7 +2572,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 11
+      "terminalbench": 11,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2571,12 +2598,39 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 5
+      "terminalbench": 5,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
      "params_b": null,
      "region": "China"
+    },
+    {
+     "key": "gemini38flashhigh",
+     "name": "Gemini 3.8 Flash High",
+     "org": "Google",
+     "avg_rank": 15.0,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 6,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 23,
+      "terminalbench": null,
+      "cursorbench": 16
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
     },
     {
      "key": "claudeopus46high",
@@ -2596,7 +2650,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 28,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2621,12 +2676,39 @@
       "livebench": null,
       "swebench": null,
       "webdev": 15,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
      "params_b": null,
      "region": "China"
+    },
+    {
+     "key": "claudesonnet5",
+     "name": "Claude Sonnet 5",
+     "org": "Anthropic",
+     "avg_rank": 16.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": null,
+      "epoch": 19,
+      "livebench": null,
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": 13,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
     },
     {
      "key": "claude-opus-4.7",
@@ -2646,7 +2728,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 25,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2671,7 +2754,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 26,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2696,7 +2780,8 @@
       "livebench": 18,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2721,7 +2806,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 31,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2746,7 +2832,8 @@
       "livebench": 12,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2771,7 +2858,34 @@
       "livebench": 9,
       "swebench": null,
       "webdev": 44,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claude-opus-4.8",
+     "name": "Claude Opus 4.8",
+     "org": "Anthropic",
+     "avg_rank": 21.75,
+     "n_sources": 4,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 40,
+      "epoch": 10,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 30,
+      "terminalbench": 7,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2780,7 +2894,7 @@
     },
     {
      "key": "musespark12xhigh",
-     "name": "Muse Spark 1.2 XHigh",
+     "name": "Muse Spark 1.2 Xhigh",
      "org": "Meta",
      "avg_rank": 22.0,
      "n_sources": 2,
@@ -2796,7 +2910,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 34,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2821,7 +2936,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 29,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2846,7 +2962,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 19,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -2871,7 +2988,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 32,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2896,7 +3014,8 @@
       "livebench": 15,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -2921,37 +3040,13 @@
       "livebench": null,
       "swebench": null,
       "webdev": 17,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
      "params_b": null,
      "region": "China"
-    },
-    {
-     "key": "claude-opus-4.8",
-     "name": "Claude Opus 4.8",
-     "org": "Anthropic",
-     "avg_rank": 26.67,
-     "n_sources": 3,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 40,
-      "epoch": 10,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 30,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
     },
     {
      "key": "grok45",
@@ -2971,7 +3066,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 27,
-      "terminalbench": 12
+      "terminalbench": 12,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -2996,7 +3092,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3021,7 +3118,8 @@
       "livebench": null,
       "swebench": 11,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3046,7 +3144,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 24,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3071,7 +3170,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 1,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3096,7 +3196,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 46,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3121,7 +3222,8 @@
       "livebench": null,
       "swebench": 21,
       "webdev": 61,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3146,7 +3248,8 @@
       "livebench": null,
       "swebench": 6,
       "webdev": 62,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3171,7 +3274,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 36,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3196,7 +3300,8 @@
       "livebench": null,
       "swebench": 17,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -3221,7 +3326,34 @@
       "livebench": null,
       "swebench": null,
       "webdev": 57,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "grok46high",
+     "name": "Grok 4.6 High",
+     "org": "xAI",
+     "avg_rank": 38.0,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 86,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 13,
+      "terminalbench": null,
+      "cursorbench": 15
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3246,7 +3378,8 @@
       "livebench": 22,
       "swebench": null,
       "webdev": 51,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -3271,7 +3404,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 21,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -3296,7 +3430,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 42,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -3321,7 +3456,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 43,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -3346,12 +3482,39 @@
       "livebench": null,
       "swebench": null,
       "webdev": 50,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
      "params_b": null,
      "region": "Other"
+    },
+    {
+     "key": "claudesonnet5high",
+     "name": "Claude Sonnet 5 High",
+     "org": "Anthropic",
+     "avg_rank": 41.33,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 60,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 33,
+      "terminalbench": null,
+      "cursorbench": 31
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
     },
     {
      "key": "deepseekv4pro",
@@ -3371,7 +3534,8 @@
       "livebench": 17,
       "swebench": null,
       "webdev": 59,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -3396,7 +3560,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 18,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3421,7 +3586,8 @@
       "livebench": 13,
       "swebench": 15,
       "webdev": 101,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3430,7 +3596,7 @@
     },
     {
      "key": "qwen3627b",
-     "name": "Qwen3.6 27B",
+     "name": "Qwen3.6 27b",
      "org": "Alibaba",
      "avg_rank": 44.5,
      "n_sources": 2,
@@ -3446,7 +3612,8 @@
       "livebench": 27,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -3471,7 +3638,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 83,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3496,7 +3664,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -3521,112 +3690,13 @@
       "livebench": null,
       "swebench": null,
       "webdev": 45,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
      "params_b": null,
      "region": "USA"
-    },
-    {
-     "key": "claudesonnet5high",
-     "name": "Claude Sonnet 5 High",
-     "org": "Anthropic",
-     "avg_rank": 46.5,
-     "n_sources": 2,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 60,
-      "epoch": null,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 33,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "claudeopus4520251101",
-     "name": "Claude Opus 4 5 20251101",
-     "org": "Anthropic",
-     "avg_rank": 48.0,
-     "n_sources": 2,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 44,
-      "epoch": null,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 52,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "qwen36maxpreview",
-     "name": "Qwen 3.6 Max Preview",
-     "org": "Alibaba",
-     "avg_rank": 48.67,
-     "n_sources": 3,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 49,
-      "epoch": 48,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 49,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "China"
-    },
-    {
-     "key": "glm5",
-     "name": "GLM 5",
-     "org": "Z.ai",
-     "avg_rank": 49.25,
-     "n_sources": 4,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 50,
-      "epoch": 69,
-      "livebench": null,
-      "swebench": 13,
-      "webdev": 65,
-      "terminalbench": null
-     },
-     "open_weights": true,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "China"
     }
    ]
   },
@@ -3820,7 +3890,7 @@
     },
     {
      "key": "musespark12xhigh",
-     "name": "Muse Spark 1.2 XHigh",
+     "name": "Muse Spark 1.2 Xhigh",
      "org": "Meta",
      "avg_rank": 10.0,
      "n_sources": 1,
@@ -4847,7 +4917,8 @@
    "source_ids": [
     "swebench",
     "webdev",
-    "terminalbench"
+    "terminalbench",
+    "cursorbench"
    ],
    "models": [
     {
@@ -4865,7 +4936,8 @@
      "ranks": {
       "swebench": 1,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -4887,7 +4959,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 1,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -4909,7 +4982,31 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 1
+      "terminalbench": 1,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claudefable51max",
+     "name": "Claude Fable 5.1 Max",
+     "org": "Anthropic",
+     "avg_rank": 1.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": 2,
+      "terminalbench": null,
+      "cursorbench": 1
      },
      "open_weights": false,
      "self_hostable": false,
@@ -4931,34 +5028,13 @@
      "ranks": {
       "swebench": 2,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
      "params_b": null,
      "region": "China"
-    },
-    {
-     "key": "claudefable51max",
-     "name": "Claude Fable 5.1 Max",
-     "org": "Anthropic",
-     "avg_rank": 2.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 1,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 2,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
     },
     {
      "key": "claude-fable-5.1",
@@ -4975,7 +5051,31 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 2
+      "terminalbench": 2,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claudefable51extrahigh",
+     "name": "Claude Fable 5.1 Extra High",
+     "org": "Anthropic",
+     "avg_rank": 2.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 2
      },
      "open_weights": false,
      "self_hostable": false,
@@ -4997,29 +5097,8 @@
      "ranks": {
       "swebench": 3,
       "webdev": null,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "claudeopus5max",
-     "name": "Claude Opus 5 Max",
-     "org": "Anthropic",
-     "avg_rank": 3.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 1,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 3,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5041,7 +5120,54 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 3
+      "terminalbench": 3,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claudefable51high",
+     "name": "Claude Fable 5.1 High",
+     "org": "Anthropic",
+     "avg_rank": 3.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 3
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claudeopus5max",
+     "name": "Claude Opus 5 Max",
+     "org": "Anthropic",
+     "avg_rank": 4.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": 3,
+      "terminalbench": null,
+      "cursorbench": 5
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5063,7 +5189,8 @@
      "ranks": {
       "swebench": 4,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5085,12 +5212,36 @@
      "ranks": {
       "swebench": null,
       "webdev": 4,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
      "params_b": null,
      "region": "China"
+    },
+    {
+     "key": "claudefable51medium",
+     "name": "Claude Fable 5.1 Medium",
+     "org": "Anthropic",
+     "avg_rank": 4.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 4
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
     },
     {
      "key": "multiple",
@@ -5107,7 +5258,8 @@
      "ranks": {
       "swebench": 5,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5129,7 +5281,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 5,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -5151,7 +5304,8 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 5
+      "terminalbench": 5,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -5173,7 +5327,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 6,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5195,7 +5350,31 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 6
+      "terminalbench": 6,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claudeopus5extrahigh",
+     "name": "Claude Opus 5 Extra High",
+     "org": "Anthropic",
+     "avg_rank": 6.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 6
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5217,7 +5396,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 10,
-      "terminalbench": 4
+      "terminalbench": 4,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5225,30 +5405,8 @@
      "region": "USA"
     },
     {
-     "key": "claudeopus5high",
-     "name": "Claude Opus 5 High",
-     "org": "Anthropic",
-     "avg_rank": 7.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 7,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "opus48",
-     "name": "Opus 4.8",
+     "key": "claudefable51low",
+     "name": "Claude Fable 5.1 Low",
      "org": "Anthropic",
      "avg_rank": 7.0,
      "n_sources": 1,
@@ -5261,12 +5419,36 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 7
+      "terminalbench": null,
+      "cursorbench": 7
      },
      "open_weights": false,
      "self_hostable": false,
      "params_b": null,
-     "region": "Other"
+     "region": "USA"
+    },
+    {
+     "key": "claudeopus5high",
+     "name": "Claude Opus 5 High",
+     "org": "Anthropic",
+     "avg_rank": 7.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": 7,
+      "terminalbench": null,
+      "cursorbench": 8
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
     },
     {
      "key": "claude46opus",
@@ -5283,29 +5465,8 @@
      "ranks": {
       "swebench": 8,
       "webdev": null,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "musespark13max",
-     "name": "Muse Spark 1.3 Max",
-     "org": "Meta",
-     "avg_rank": 8.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 8,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5327,7 +5488,8 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 8
+      "terminalbench": 8,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5349,7 +5511,8 @@
      "ranks": {
       "swebench": 9,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5371,7 +5534,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 9,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5393,7 +5557,54 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 9
+      "terminalbench": 9,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claudeopus5medium",
+     "name": "Claude Opus 5 Medium",
+     "org": "Anthropic",
+     "avg_rank": 9.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 9
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "musespark13max",
+     "name": "Muse Spark 1.3 Max",
+     "org": "Meta",
+     "avg_rank": 9.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": 8,
+      "terminalbench": null,
+      "cursorbench": 11
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5415,7 +5626,8 @@
      "ranks": {
       "swebench": 10,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5437,7 +5649,31 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 10
+      "terminalbench": 10,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "gpt56solmax",
+     "name": "GPT 5.6 Sol Max",
+     "org": "OpenAI",
+     "avg_rank": 10.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 10
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5459,7 +5695,8 @@
      "ranks": {
       "swebench": 11,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5481,7 +5718,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 11,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5503,7 +5741,8 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 11
+      "terminalbench": 11,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5525,7 +5764,8 @@
      "ranks": {
       "swebench": 12,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5534,7 +5774,7 @@
     },
     {
      "key": "musespark13xhigh",
-     "name": "Muse Spark 1.3 XHigh",
+     "name": "Muse Spark 1.3 Xhigh",
      "org": "Meta",
      "avg_rank": 12.0,
      "n_sources": 1,
@@ -5547,7 +5787,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 12,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5555,10 +5796,10 @@
      "region": "USA"
     },
     {
-     "key": "grok46high",
-     "name": "Grok 4.6 High",
+     "key": "grok46extrahigh",
+     "name": "Grok 4.6 Extra High",
      "org": "xAI",
-     "avg_rank": 13.0,
+     "avg_rank": 12.0,
      "n_sources": 1,
      "placements": {
       "1": 0,
@@ -5568,8 +5809,9 @@
      },
      "ranks": {
       "swebench": null,
-      "webdev": 13,
-      "terminalbench": null
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 12
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5577,8 +5819,8 @@
      "region": "USA"
     },
     {
-     "key": "sonnet5",
-     "name": "Sonnet 5",
+     "key": "claudesonnet5",
+     "name": "Claude Sonnet 5",
      "org": "Anthropic",
      "avg_rank": 13.0,
      "n_sources": 1,
@@ -5591,12 +5833,59 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 13
+      "terminalbench": 13,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
      "params_b": null,
-     "region": "Other"
+     "region": "USA"
+    },
+    {
+     "key": "gpt56terramax",
+     "name": "GPT 5.6 Terra Max",
+     "org": "OpenAI",
+     "avg_rank": 13.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 13
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "grok46high",
+     "name": "Grok 4.6 High",
+     "org": "xAI",
+     "avg_rank": 14.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": 13,
+      "terminalbench": null,
+      "cursorbench": 15
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
     },
     {
      "key": "gpt56solxhighcodexharness",
@@ -5613,7 +5902,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 14,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5635,7 +5925,31 @@
      "ranks": {
       "swebench": null,
       "webdev": null,
-      "terminalbench": 14
+      "terminalbench": 14,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claudeopus5low",
+     "name": "Claude Opus 5 Low",
+     "org": "Anthropic",
+     "avg_rank": 14.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 14
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5657,7 +5971,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 15,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -5679,7 +5994,8 @@
      "ranks": {
       "swebench": 16,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -5701,7 +6017,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 16,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5723,7 +6040,8 @@
      "ranks": {
       "swebench": 17,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -5745,12 +6063,36 @@
      "ranks": {
       "swebench": null,
       "webdev": 17,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
      "params_b": null,
      "region": "China"
+    },
+    {
+     "key": "gpt56solextrahigh",
+     "name": "GPT 5.6 Sol Extra High",
+     "org": "OpenAI",
+     "avg_rank": 17.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 17
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
     },
     {
      "key": "undisclosed",
@@ -5767,7 +6109,8 @@
      "ranks": {
       "swebench": 18,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5789,12 +6132,59 @@
      "ranks": {
       "swebench": null,
       "webdev": 18,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
      "params_b": null,
      "region": "China"
+    },
+    {
+     "key": "musespark13extrahigh",
+     "name": "Muse Spark 1.3 Extra High",
+     "org": "Unknown",
+     "avg_rank": 18.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 18
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "claude-opus-4.8",
+     "name": "Claude Opus 4.8",
+     "org": "Anthropic",
+     "avg_rank": 18.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": 30,
+      "terminalbench": 7,
+      "cursorbench": null
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
     },
     {
      "key": "glm52max",
@@ -5811,12 +6201,59 @@
      "ranks": {
       "swebench": null,
       "webdev": 19,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
      "params_b": null,
      "region": "China"
+    },
+    {
+     "key": "gemini38flashmedium",
+     "name": "Gemini 3.8 Flash Medium",
+     "org": "Google",
+     "avg_rank": 19.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": null,
+      "cursorbench": 19
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
+    },
+    {
+     "key": "gemini38flashhigh",
+     "name": "Gemini 3.8 Flash High",
+     "org": "Google",
+     "avg_rank": 19.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "swebench": null,
+      "webdev": 23,
+      "terminalbench": null,
+      "cursorbench": 16
+     },
+     "open_weights": false,
+     "self_hostable": false,
+     "params_b": null,
+     "region": "USA"
     },
     {
      "key": "grok45",
@@ -5833,7 +6270,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 27,
-      "terminalbench": 12
+      "terminalbench": 12,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -5855,315 +6293,8 @@
      "ranks": {
       "swebench": null,
       "webdev": 20,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "deepseekv4prohigh20260813",
-     "name": "Deepseek V4 Pro High 20260813",
-     "org": "DeepSeek",
-     "avg_rank": 21.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 21,
-      "terminalbench": null
-     },
-     "open_weights": true,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "China"
-    },
-    {
-     "key": "deepseekv4flashhigh",
-     "name": "Deepseek V4 Flash High",
-     "org": "DeepSeek",
-     "avg_rank": 22.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 22,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "China"
-    },
-    {
-     "key": "claude45haiku",
-     "name": "Claude 4.5 Haiku",
-     "org": "Anthropic",
-     "avg_rank": 23.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": 23,
-      "webdev": null,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "gemini38flashhigh",
-     "name": "Gemini 3.8 Flash High",
-     "org": "Google",
-     "avg_rank": 23.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 23,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "claude37sonnet",
-     "name": "Claude 3.7 Sonnet",
-     "org": "Anthropic",
-     "avg_rank": 24.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": 24,
-      "webdev": null,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "claudeopus48high",
-     "name": "Claude Opus 4 8 High",
-     "org": "Anthropic",
-     "avg_rank": 24.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 24,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "claude-opus-4.7",
-     "name": "Claude Opus 4.7",
-     "org": "Anthropic",
-     "avg_rank": 25.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 25,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "claudeopus47high",
-     "name": "Claude Opus 4 7 High",
-     "org": "Anthropic",
-     "avg_rank": 26.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 26,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "o1preview",
-     "name": "O1 Preview",
-     "org": "OpenAI",
-     "avg_rank": 28.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": 28,
-      "webdev": null,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "claudeopus46high",
-     "name": "Claude Opus 4 6 High",
-     "org": "Anthropic",
-     "avg_rank": 28.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 28,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "o4mini",
-     "name": "O4 Mini",
-     "org": "OpenAI",
-     "avg_rank": 29.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": 29,
-      "webdev": null,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "musespark11",
-     "name": "Muse Spark 1.1",
-     "org": "Meta",
-     "avg_rank": 29.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 29,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "USA"
-    },
-    {
-     "key": "glm45",
-     "name": "GLM 4.5",
-     "org": "Z.ai",
-     "avg_rank": 30.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": 30,
-      "webdev": null,
-      "terminalbench": null
-     },
-     "open_weights": false,
-     "self_hostable": false,
-     "params_b": null,
-     "region": "China"
-    },
-    {
-     "key": "claude-opus-4.8",
-     "name": "Claude Opus 4.8",
-     "org": "Anthropic",
-     "avg_rank": 30.0,
-     "n_sources": 1,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "swebench": null,
-      "webdev": 30,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": false,
      "self_hostable": false,
@@ -6582,7 +6713,7 @@
     },
     {
      "key": "deepseekv4pro0813",
-     "name": "DeepSeek V4 Pro 0813",
+     "name": "Deepseek V4 Pro 0813",
      "org": "DeepSeek",
      "avg_rank": 21.0,
      "n_sources": 1,
@@ -6722,7 +6853,7 @@
     },
     {
      "key": "deepseekv4flash0731",
-     "name": "DeepSeek V4 Flash 0731",
+     "name": "Deepseek V4 Flash 0731",
      "org": "DeepSeek",
      "avg_rank": 28.0,
      "n_sources": 1,
@@ -7302,7 +7433,7 @@
     },
     {
      "key": "qwen35397ba17b",
-     "name": "Qwen3.5 397B A17B",
+     "name": "Qwen3.5 397b A17b",
      "org": "Alibaba",
      "avg_rank": 57.0,
      "n_sources": 1,
@@ -7362,7 +7493,7 @@
     },
     {
      "key": "qwen35plushosted397ba17b",
-     "name": "Qwen 3.5 Plus Hosted 397B A17B",
+     "name": "Qwen 3.5 Plus Hosted 397b A17b",
      "org": "Alibaba",
      "avg_rank": 60.0,
      "n_sources": 1,
@@ -7392,7 +7523,8 @@
     "livebench",
     "swebench",
     "webdev",
-    "terminalbench"
+    "terminalbench",
+    "cursorbench"
    ],
    "models": [
     {
@@ -7413,7 +7545,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 1
+      "terminalbench": 1,
+      "cursorbench": null
      },
      "input_1m": 5.0,
      "output_1m": 25.0
@@ -7422,10 +7555,10 @@
      "key": "claudefable51max",
      "name": "Claude Fable 5.1 Max",
      "org": "Anthropic",
-     "avg_rank": 1.5,
-     "n_sources": 2,
+     "avg_rank": 1.33,
+     "n_sources": 3,
      "placements": {
-      "1": 1,
+      "1": 2,
       "2": 1,
       "3": 0,
       "4": 0
@@ -7436,7 +7569,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 2,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": 1
      },
      "input_1m": null,
      "output_1m": null
@@ -7459,33 +7593,11 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 2
+      "terminalbench": 2,
+      "cursorbench": null
      },
      "input_1m": 5.0,
      "output_1m": 25.0
-    },
-    {
-     "key": "claudeopus5max",
-     "name": "Claude Opus 5 Max",
-     "org": "Anthropic",
-     "avg_rank": 3.0,
-     "n_sources": 2,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 2,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 3,
-      "epoch": null,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 3,
-      "terminalbench": null
-     },
-     "input_1m": null,
-     "output_1m": null
     },
     {
      "key": "claude-opus-5",
@@ -7505,17 +7617,42 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 3
+      "terminalbench": 3,
+      "cursorbench": null
      },
      "input_1m": 2.5,
      "output_1m": 12.5
     },
     {
+     "key": "claudeopus5max",
+     "name": "Claude Opus 5 Max",
+     "org": "Anthropic",
+     "avg_rank": 3.67,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 3,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 3,
+      "terminalbench": null,
+      "cursorbench": 5
+     },
+     "input_1m": null,
+     "output_1m": null
+    },
+    {
      "key": "claudeopus5high",
      "name": "Claude Opus 5 High",
      "org": "Anthropic",
-     "avg_rank": 4.5,
-     "n_sources": 2,
+     "avg_rank": 5.67,
+     "n_sources": 3,
      "placements": {
       "1": 0,
       "2": 1,
@@ -7528,7 +7665,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 7,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": 8
      },
      "input_1m": null,
      "output_1m": null
@@ -7551,7 +7689,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 10,
-      "terminalbench": 4
+      "terminalbench": 4,
+      "cursorbench": null
      },
      "input_1m": 5.0,
      "output_1m": 25.0
@@ -7574,7 +7713,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 6
+      "terminalbench": 6,
+      "cursorbench": null
      },
      "input_1m": 1.0,
      "output_1m": 5.0
@@ -7597,10 +7737,35 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 8
+      "terminalbench": 8,
+      "cursorbench": null
      },
      "input_1m": 1.0,
      "output_1m": 6.0
+    },
+    {
+     "key": "musespark13max",
+     "name": "Muse Spark 1.3 Max",
+     "org": "Meta",
+     "avg_rank": 9.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": null,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 8,
+      "terminalbench": null,
+      "cursorbench": 11
+     },
+     "input_1m": null,
+     "output_1m": null
     },
     {
      "key": "qwen-3.8-max",
@@ -7620,7 +7785,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 6,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -7643,7 +7809,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 14
+      "terminalbench": 14,
+      "cursorbench": null
      },
      "input_1m": 0.375,
      "output_1m": 1.875
@@ -7666,7 +7833,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 9
+      "terminalbench": 9,
+      "cursorbench": null
      },
      "input_1m": 2.0,
      "output_1m": 6.0
@@ -7689,7 +7857,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 5,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -7712,7 +7881,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 20,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -7735,30 +7905,8 @@
       "livebench": 4,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
-     },
-     "input_1m": null,
-     "output_1m": null
-    },
-    {
-     "key": "gemini38flashhigh",
-     "name": "Gemini 3.8 Flash High",
-     "org": "Google",
-     "avg_rank": 14.5,
-     "n_sources": 2,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 6,
-      "epoch": null,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 23,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -7781,7 +7929,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 11
+      "terminalbench": 11,
+      "cursorbench": null
      },
      "input_1m": 0.1,
      "output_1m": 0.6
@@ -7804,10 +7953,35 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 5
+      "terminalbench": 5,
+      "cursorbench": null
      },
      "input_1m": 0.7,
      "output_1m": 2.2
+    },
+    {
+     "key": "gemini38flashhigh",
+     "name": "Gemini 3.8 Flash High",
+     "org": "Google",
+     "avg_rank": 15.0,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 6,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 23,
+      "terminalbench": null,
+      "cursorbench": 16
+     },
+     "input_1m": null,
+     "output_1m": null
     },
     {
      "key": "claudeopus46high",
@@ -7827,7 +8001,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 28,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -7850,10 +8025,35 @@
       "livebench": null,
       "swebench": null,
       "webdev": 15,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
+    },
+    {
+     "key": "claudesonnet5",
+     "name": "Claude Sonnet 5",
+     "org": "Anthropic",
+     "avg_rank": 16.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": null,
+      "epoch": 19,
+      "livebench": null,
+      "swebench": null,
+      "webdev": null,
+      "terminalbench": 13,
+      "cursorbench": null
+     },
+     "input_1m": 1.0,
+     "output_1m": 5.0
     },
     {
      "key": "claude-opus-4.7",
@@ -7873,7 +8073,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 25,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 2.5,
      "output_1m": 12.5
@@ -7896,7 +8097,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 26,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -7919,7 +8121,8 @@
       "livebench": 18,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 2.5,
      "output_1m": 15.0
@@ -7942,7 +8145,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 31,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 2.5,
      "output_1m": 12.5
@@ -7965,7 +8169,8 @@
       "livebench": 12,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 1.475,
      "output_1m": 4.425
@@ -7988,14 +8193,39 @@
       "livebench": 9,
       "swebench": null,
       "webdev": 44,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
     },
     {
+     "key": "claude-opus-4.8",
+     "name": "Claude Opus 4.8",
+     "org": "Anthropic",
+     "avg_rank": 21.75,
+     "n_sources": 4,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 40,
+      "epoch": 10,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 30,
+      "terminalbench": 7,
+      "cursorbench": null
+     },
+     "input_1m": 2.5,
+     "output_1m": 12.5
+    },
+    {
      "key": "musespark12xhigh",
-     "name": "Muse Spark 1.2 XHigh",
+     "name": "Muse Spark 1.2 Xhigh",
      "org": "Meta",
      "avg_rank": 22.0,
      "n_sources": 2,
@@ -8011,7 +8241,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 34,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8034,7 +8265,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 29,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 1.25,
      "output_1m": 4.25
@@ -8057,7 +8289,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 19,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8080,7 +8313,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 32,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8103,7 +8337,8 @@
       "livebench": 15,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.6,
      "output_1m": 2.0
@@ -8126,33 +8361,11 @@
       "livebench": null,
       "swebench": null,
       "webdev": 17,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.075,
      "output_1m": 0.25
-    },
-    {
-     "key": "claude-opus-4.8",
-     "name": "Claude Opus 4.8",
-     "org": "Anthropic",
-     "avg_rank": 26.67,
-     "n_sources": 3,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 40,
-      "epoch": 10,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 30,
-      "terminalbench": null
-     },
-     "input_1m": 2.5,
-     "output_1m": 12.5
     },
     {
      "key": "grok45",
@@ -8172,7 +8385,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 27,
-      "terminalbench": 12
+      "terminalbench": 12,
+      "cursorbench": null
      },
      "input_1m": 2.0,
      "output_1m": 6.0
@@ -8195,7 +8409,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8218,7 +8433,8 @@
       "livebench": null,
       "swebench": 11,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.625,
      "output_1m": 5.0
@@ -8241,7 +8457,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 24,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8264,7 +8481,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 1,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8287,7 +8505,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 46,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8310,7 +8529,8 @@
       "livebench": null,
       "swebench": 21,
       "webdev": 61,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8333,7 +8553,8 @@
       "livebench": null,
       "swebench": 6,
       "webdev": 62,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8356,7 +8577,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 36,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 1.5,
      "output_1m": 7.5
@@ -8379,7 +8601,8 @@
       "livebench": null,
       "swebench": 17,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.45,
      "output_1m": 2.25
@@ -8402,10 +8625,35 @@
       "livebench": null,
       "swebench": null,
       "webdev": 57,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 1.0,
      "output_1m": 6.0
+    },
+    {
+     "key": "grok46high",
+     "name": "Grok 4.6 High",
+     "org": "xAI",
+     "avg_rank": 38.0,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 86,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 13,
+      "terminalbench": null,
+      "cursorbench": 15
+     },
+     "input_1m": null,
+     "output_1m": null
     },
     {
      "key": "kimik27code",
@@ -8425,7 +8673,8 @@
       "livebench": 22,
       "swebench": null,
       "webdev": 51,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.71,
      "output_1m": 3.5
@@ -8448,7 +8697,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 21,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
@@ -8471,7 +8721,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 42,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.95,
      "output_1m": 4.0
@@ -8494,7 +8745,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 43,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.966,
      "output_1m": 3.036
@@ -8517,10 +8769,35 @@
       "livebench": null,
       "swebench": null,
       "webdev": 50,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.435,
      "output_1m": 0.87
+    },
+    {
+     "key": "claudesonnet5high",
+     "name": "Claude Sonnet 5 High",
+     "org": "Anthropic",
+     "avg_rank": 41.33,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 60,
+      "epoch": null,
+      "livebench": null,
+      "swebench": null,
+      "webdev": 33,
+      "terminalbench": null,
+      "cursorbench": 31
+     },
+     "input_1m": null,
+     "output_1m": null
     },
     {
      "key": "deepseekv4pro",
@@ -8540,7 +8817,8 @@
       "livebench": 17,
       "swebench": null,
       "webdev": 59,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 1.6,
      "output_1m": 3.2
@@ -8563,7 +8841,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 18,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.214,
      "output_1m": 2.55
@@ -8586,14 +8865,15 @@
       "livebench": 13,
       "swebench": 15,
       "webdev": 101,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 1.75,
      "output_1m": 14.0
     },
     {
      "key": "qwen3627b",
-     "name": "Qwen3.6 27B",
+     "name": "Qwen3.6 27b",
      "org": "Alibaba",
      "avg_rank": 44.5,
      "n_sources": 2,
@@ -8609,7 +8889,8 @@
       "livebench": 27,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.3,
      "output_1m": 2.0
@@ -8632,7 +8913,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 83,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 1.25,
      "output_1m": 7.5
@@ -8655,7 +8937,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": 0.32,
      "output_1m": 1.28
@@ -8678,102 +8961,11 @@
       "livebench": null,
       "swebench": null,
       "webdev": 45,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "input_1m": null,
      "output_1m": null
-    },
-    {
-     "key": "claudesonnet5high",
-     "name": "Claude Sonnet 5 High",
-     "org": "Anthropic",
-     "avg_rank": 46.5,
-     "n_sources": 2,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 60,
-      "epoch": null,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 33,
-      "terminalbench": null
-     },
-     "input_1m": null,
-     "output_1m": null
-    },
-    {
-     "key": "claudeopus4520251101",
-     "name": "Claude Opus 4 5 20251101",
-     "org": "Anthropic",
-     "avg_rank": 48.0,
-     "n_sources": 2,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 44,
-      "epoch": null,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 52,
-      "terminalbench": null
-     },
-     "input_1m": null,
-     "output_1m": null
-    },
-    {
-     "key": "qwen36maxpreview",
-     "name": "Qwen 3.6 Max Preview",
-     "org": "Alibaba",
-     "avg_rank": 48.67,
-     "n_sources": 3,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 49,
-      "epoch": 48,
-      "livebench": null,
-      "swebench": null,
-      "webdev": 49,
-      "terminalbench": null
-     },
-     "input_1m": 1.027,
-     "output_1m": 6.162
-    },
-    {
-     "key": "glm5",
-     "name": "GLM 5",
-     "org": "Z.ai",
-     "avg_rank": 49.25,
-     "n_sources": 4,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 50,
-      "epoch": 69,
-      "livebench": null,
-      "swebench": 13,
-      "webdev": 65,
-      "terminalbench": null
-     },
-     "input_1m": 0.6,
-     "output_1m": 1.92
     }
    ]
   },
@@ -8787,7 +8979,8 @@
     "livebench",
     "swebench",
     "webdev",
-    "terminalbench"
+    "terminalbench",
+    "cursorbench"
    ],
    "models": [
     {
@@ -8808,7 +9001,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 5,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -8833,7 +9027,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": null,
-      "terminalbench": 5
+      "terminalbench": 5,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -8858,7 +9053,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 15,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -8883,7 +9079,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 19,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -8908,7 +9105,8 @@
       "livebench": 15,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -8933,7 +9131,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 17,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -8958,7 +9157,8 @@
       "livebench": null,
       "swebench": 17,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -8983,7 +9183,8 @@
       "livebench": 22,
       "swebench": null,
       "webdev": 51,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -9008,7 +9209,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 21,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -9033,7 +9235,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 42,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -9058,7 +9261,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 43,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -9083,7 +9287,8 @@
       "livebench": 17,
       "swebench": null,
       "webdev": 59,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": false,
@@ -9092,7 +9297,7 @@
     },
     {
      "key": "qwen3627b",
-     "name": "Qwen3.6 27B",
+     "name": "Qwen3.6 27b",
      "org": "Alibaba",
      "avg_rank": 44.5,
      "n_sources": 2,
@@ -9108,36 +9313,12 @@
       "livebench": 27,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
      "params_b": 27,
-     "region": "China"
-    },
-    {
-     "key": "glm5",
-     "name": "GLM 5",
-     "org": "Z.ai",
-     "avg_rank": 49.25,
-     "n_sources": 4,
-     "placements": {
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
-     },
-     "ranks": {
-      "lmarena": 50,
-      "epoch": 69,
-      "livebench": null,
-      "swebench": 13,
-      "webdev": 65,
-      "terminalbench": null
-     },
-     "open_weights": true,
-     "self_hostable": false,
-     "params_b": null,
      "region": "China"
     }
    ]
@@ -9152,7 +9333,8 @@
     "livebench",
     "swebench",
     "webdev",
-    "terminalbench"
+    "terminalbench",
+    "cursorbench"
    ],
    "models": [
     {
@@ -9173,7 +9355,8 @@
       "livebench": null,
       "swebench": 17,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -9198,7 +9381,8 @@
       "livebench": 22,
       "swebench": null,
       "webdev": 51,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -9223,7 +9407,8 @@
       "livebench": null,
       "swebench": null,
       "webdev": 42,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -9232,7 +9417,7 @@
     },
     {
      "key": "qwen3627b",
-     "name": "Qwen3.6 27B",
+     "name": "Qwen3.6 27b",
      "org": "Alibaba",
      "avg_rank": 44.5,
      "n_sources": 2,
@@ -9248,7 +9433,8 @@
       "livebench": 27,
       "swebench": null,
       "webdev": null,
-      "terminalbench": null
+      "terminalbench": null,
+      "cursorbench": null
      },
      "open_weights": true,
      "self_hostable": true,
@@ -9277,7 +9463,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": 1
+    "terminalbench": 1,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9288,10 +9475,10 @@
    "key": "claudefable51max",
    "name": "Claude Fable 5.1 Max",
    "org": "Anthropic",
-   "avg_rank": 1.5,
-   "n_sources": 2,
+   "avg_rank": 1.33,
+   "n_sources": 3,
    "placements": {
-    "1": 1,
+    "1": 2,
     "2": 1,
     "3": 0,
     "4": 0
@@ -9302,7 +9489,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 2,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": 1
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9327,32 +9515,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": 2
-   },
-   "open_weights": false,
-   "self_hostable": false,
-   "params_b": null,
-   "region": "USA"
-  },
-  {
-   "key": "claudeopus5max",
-   "name": "Claude Opus 5 Max",
-   "org": "Anthropic",
-   "avg_rank": 3.0,
-   "n_sources": 2,
-   "placements": {
-    "1": 0,
-    "2": 0,
-    "3": 2,
-    "4": 0
-   },
-   "ranks": {
-    "lmarena": 3,
-    "epoch": null,
-    "livebench": null,
-    "swebench": null,
-    "webdev": 3,
-    "terminalbench": null
+    "terminalbench": 2,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9377,7 +9541,34 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": 3
+    "terminalbench": 3,
+    "cursorbench": null
+   },
+   "open_weights": false,
+   "self_hostable": false,
+   "params_b": null,
+   "region": "USA"
+  },
+  {
+   "key": "claudeopus5max",
+   "name": "Claude Opus 5 Max",
+   "org": "Anthropic",
+   "avg_rank": 3.67,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 2,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 3,
+    "epoch": null,
+    "livebench": null,
+    "swebench": null,
+    "webdev": 3,
+    "terminalbench": null,
+    "cursorbench": 5
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9388,8 +9579,8 @@
    "key": "claudeopus5high",
    "name": "Claude Opus 5 High",
    "org": "Anthropic",
-   "avg_rank": 4.5,
-   "n_sources": 2,
+   "avg_rank": 5.67,
+   "n_sources": 3,
    "placements": {
     "1": 0,
     "2": 1,
@@ -9402,7 +9593,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 7,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": 8
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9427,7 +9619,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 10,
-    "terminalbench": 4
+    "terminalbench": 4,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9452,7 +9645,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": 6
+    "terminalbench": 6,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9477,7 +9671,34 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": 8
+    "terminalbench": 8,
+    "cursorbench": null
+   },
+   "open_weights": false,
+   "self_hostable": false,
+   "params_b": null,
+   "region": "USA"
+  },
+  {
+   "key": "musespark13max",
+   "name": "Muse Spark 1.3 Max",
+   "org": "Meta",
+   "avg_rank": 9.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": null,
+    "epoch": null,
+    "livebench": null,
+    "swebench": null,
+    "webdev": 8,
+    "terminalbench": null,
+    "cursorbench": 11
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9502,7 +9723,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 6,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9527,7 +9749,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": 14
+    "terminalbench": 14,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9552,7 +9775,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": 9
+    "terminalbench": 9,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9577,7 +9801,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 5,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": false,
@@ -9602,7 +9827,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 20,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9627,32 +9853,8 @@
     "livebench": 4,
     "swebench": null,
     "webdev": null,
-    "terminalbench": null
-   },
-   "open_weights": false,
-   "self_hostable": false,
-   "params_b": null,
-   "region": "USA"
-  },
-  {
-   "key": "gemini38flashhigh",
-   "name": "Gemini 3.8 Flash High",
-   "org": "Google",
-   "avg_rank": 14.5,
-   "n_sources": 2,
-   "placements": {
-    "1": 0,
-    "2": 0,
-    "3": 0,
-    "4": 0
-   },
-   "ranks": {
-    "lmarena": 6,
-    "epoch": null,
-    "livebench": null,
-    "swebench": null,
-    "webdev": 23,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9677,7 +9879,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": 11
+    "terminalbench": 11,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9702,12 +9905,39 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": 5
+    "terminalbench": 5,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": false,
    "params_b": null,
    "region": "China"
+  },
+  {
+   "key": "gemini38flashhigh",
+   "name": "Gemini 3.8 Flash High",
+   "org": "Google",
+   "avg_rank": 15.0,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 6,
+    "epoch": null,
+    "livebench": null,
+    "swebench": null,
+    "webdev": 23,
+    "terminalbench": null,
+    "cursorbench": 16
+   },
+   "open_weights": false,
+   "self_hostable": false,
+   "params_b": null,
+   "region": "USA"
   },
   {
    "key": "claudeopus46high",
@@ -9727,7 +9957,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 28,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9752,12 +9983,39 @@
     "livebench": null,
     "swebench": null,
     "webdev": 15,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": false,
    "params_b": null,
    "region": "China"
+  },
+  {
+   "key": "claudesonnet5",
+   "name": "Claude Sonnet 5",
+   "org": "Anthropic",
+   "avg_rank": 16.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": null,
+    "epoch": 19,
+    "livebench": null,
+    "swebench": null,
+    "webdev": null,
+    "terminalbench": 13,
+    "cursorbench": null
+   },
+   "open_weights": false,
+   "self_hostable": false,
+   "params_b": null,
+   "region": "USA"
   },
   {
    "key": "claude-opus-4.7",
@@ -9777,7 +10035,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 25,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9802,7 +10061,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 26,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9827,7 +10087,8 @@
     "livebench": 18,
     "swebench": null,
     "webdev": null,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9852,7 +10113,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 31,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9877,7 +10139,8 @@
     "livebench": 12,
     "swebench": null,
     "webdev": null,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9902,7 +10165,34 @@
     "livebench": 9,
     "swebench": null,
     "webdev": 44,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
+   },
+   "open_weights": false,
+   "self_hostable": false,
+   "params_b": null,
+   "region": "USA"
+  },
+  {
+   "key": "claude-opus-4.8",
+   "name": "Claude Opus 4.8",
+   "org": "Anthropic",
+   "avg_rank": 21.75,
+   "n_sources": 4,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 40,
+    "epoch": 10,
+    "livebench": null,
+    "swebench": null,
+    "webdev": 30,
+    "terminalbench": 7,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9911,7 +10201,7 @@
   },
   {
    "key": "musespark12xhigh",
-   "name": "Muse Spark 1.2 XHigh",
+   "name": "Muse Spark 1.2 Xhigh",
    "org": "Meta",
    "avg_rank": 22.0,
    "n_sources": 2,
@@ -9927,7 +10217,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 34,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9952,7 +10243,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 29,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -9977,7 +10269,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 19,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": false,
@@ -10002,7 +10295,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 32,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10027,7 +10321,8 @@
     "livebench": 15,
     "swebench": null,
     "webdev": null,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": false,
@@ -10052,37 +10347,13 @@
     "livebench": null,
     "swebench": null,
     "webdev": 17,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": false,
    "params_b": null,
    "region": "China"
-  },
-  {
-   "key": "claude-opus-4.8",
-   "name": "Claude Opus 4.8",
-   "org": "Anthropic",
-   "avg_rank": 26.67,
-   "n_sources": 3,
-   "placements": {
-    "1": 0,
-    "2": 0,
-    "3": 0,
-    "4": 0
-   },
-   "ranks": {
-    "lmarena": 40,
-    "epoch": 10,
-    "livebench": null,
-    "swebench": null,
-    "webdev": 30,
-    "terminalbench": null
-   },
-   "open_weights": false,
-   "self_hostable": false,
-   "params_b": null,
-   "region": "USA"
   },
   {
    "key": "grok45",
@@ -10102,7 +10373,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 27,
-    "terminalbench": 12
+    "terminalbench": 12,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10127,7 +10399,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10152,7 +10425,8 @@
     "livebench": null,
     "swebench": 11,
     "webdev": null,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10177,7 +10451,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 24,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10202,7 +10477,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 1,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10227,7 +10503,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 46,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10252,7 +10529,8 @@
     "livebench": null,
     "swebench": 21,
     "webdev": 61,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10277,7 +10555,8 @@
     "livebench": null,
     "swebench": 6,
     "webdev": 62,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10302,7 +10581,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 36,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10327,7 +10607,8 @@
     "livebench": null,
     "swebench": 17,
     "webdev": null,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": true,
@@ -10352,7 +10633,34 @@
     "livebench": null,
     "swebench": null,
     "webdev": 57,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
+   },
+   "open_weights": false,
+   "self_hostable": false,
+   "params_b": null,
+   "region": "USA"
+  },
+  {
+   "key": "grok46high",
+   "name": "Grok 4.6 High",
+   "org": "xAI",
+   "avg_rank": 38.0,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 86,
+    "epoch": null,
+    "livebench": null,
+    "swebench": null,
+    "webdev": 13,
+    "terminalbench": null,
+    "cursorbench": 15
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10377,7 +10685,8 @@
     "livebench": 22,
     "swebench": null,
     "webdev": 51,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": true,
@@ -10402,7 +10711,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 21,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": false,
@@ -10427,7 +10737,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 42,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": true,
@@ -10452,7 +10763,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 43,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": false,
@@ -10477,12 +10789,39 @@
     "livebench": null,
     "swebench": null,
     "webdev": 50,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
    "params_b": null,
    "region": "Other"
+  },
+  {
+   "key": "claudesonnet5high",
+   "name": "Claude Sonnet 5 High",
+   "org": "Anthropic",
+   "avg_rank": 41.33,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 60,
+    "epoch": null,
+    "livebench": null,
+    "swebench": null,
+    "webdev": 33,
+    "terminalbench": null,
+    "cursorbench": 31
+   },
+   "open_weights": false,
+   "self_hostable": false,
+   "params_b": null,
+   "region": "USA"
   },
   {
    "key": "deepseekv4pro",
@@ -10502,7 +10841,8 @@
     "livebench": 17,
     "swebench": null,
     "webdev": 59,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": false,
@@ -10527,7 +10867,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 18,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10552,7 +10893,8 @@
     "livebench": 13,
     "swebench": 15,
     "webdev": 101,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10561,7 +10903,7 @@
   },
   {
    "key": "qwen3627b",
-   "name": "Qwen3.6 27B",
+   "name": "Qwen3.6 27b",
    "org": "Alibaba",
    "avg_rank": 44.5,
    "n_sources": 2,
@@ -10577,7 +10919,8 @@
     "livebench": 27,
     "swebench": null,
     "webdev": null,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": true,
    "self_hostable": true,
@@ -10602,7 +10945,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": 83,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10627,7 +10971,8 @@
     "livebench": null,
     "swebench": null,
     "webdev": null,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
@@ -10652,112 +10997,13 @@
     "livebench": null,
     "swebench": null,
     "webdev": 45,
-    "terminalbench": null
+    "terminalbench": null,
+    "cursorbench": null
    },
    "open_weights": false,
    "self_hostable": false,
    "params_b": null,
    "region": "USA"
-  },
-  {
-   "key": "claudesonnet5high",
-   "name": "Claude Sonnet 5 High",
-   "org": "Anthropic",
-   "avg_rank": 46.5,
-   "n_sources": 2,
-   "placements": {
-    "1": 0,
-    "2": 0,
-    "3": 0,
-    "4": 0
-   },
-   "ranks": {
-    "lmarena": 60,
-    "epoch": null,
-    "livebench": null,
-    "swebench": null,
-    "webdev": 33,
-    "terminalbench": null
-   },
-   "open_weights": false,
-   "self_hostable": false,
-   "params_b": null,
-   "region": "USA"
-  },
-  {
-   "key": "claudeopus4520251101",
-   "name": "Claude Opus 4 5 20251101",
-   "org": "Anthropic",
-   "avg_rank": 48.0,
-   "n_sources": 2,
-   "placements": {
-    "1": 0,
-    "2": 0,
-    "3": 0,
-    "4": 0
-   },
-   "ranks": {
-    "lmarena": 44,
-    "epoch": null,
-    "livebench": null,
-    "swebench": null,
-    "webdev": 52,
-    "terminalbench": null
-   },
-   "open_weights": false,
-   "self_hostable": false,
-   "params_b": null,
-   "region": "USA"
-  },
-  {
-   "key": "qwen36maxpreview",
-   "name": "Qwen 3.6 Max Preview",
-   "org": "Alibaba",
-   "avg_rank": 48.67,
-   "n_sources": 3,
-   "placements": {
-    "1": 0,
-    "2": 0,
-    "3": 0,
-    "4": 0
-   },
-   "ranks": {
-    "lmarena": 49,
-    "epoch": 48,
-    "livebench": null,
-    "swebench": null,
-    "webdev": 49,
-    "terminalbench": null
-   },
-   "open_weights": false,
-   "self_hostable": false,
-   "params_b": null,
-   "region": "China"
-  },
-  {
-   "key": "glm5",
-   "name": "GLM 5",
-   "org": "Z.ai",
-   "avg_rank": 49.25,
-   "n_sources": 4,
-   "placements": {
-    "1": 0,
-    "2": 0,
-    "3": 0,
-    "4": 0
-   },
-   "ranks": {
-    "lmarena": 50,
-    "epoch": 69,
-    "livebench": null,
-    "swebench": 13,
-    "webdev": 65,
-    "terminalbench": null
-   },
-   "open_weights": true,
-   "self_hostable": false,
-   "params_b": null,
-   "region": "China"
   }
  ]
 }
