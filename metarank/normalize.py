@@ -10,6 +10,22 @@ import re
 PAREN_OPEN = re.compile(r"\s*\(\s*")
 PAREN_CLOSE = re.compile(r"\s*\)\s*")
 
+# CursorBench-style short vendor prefixes -> full vendor+family words.
+# Applied to the word form before keying so "Fable 5.1 Max" merges with
+# "Claude Fable 5.1 Max" from other sources, while the variant suffix
+# (Max/High/Low/...) keeps every row distinct (no-rollup policy).
+VENDOR_PREFIX = (
+    ("fable", "claude fable"),
+    ("opus", "claude opus"),
+    ("sonnet", "claude sonnet"),
+)
+
+def _expand_vendor_words(n: str) -> str:
+    for short, full in VENDOR_PREFIX:
+        if n == short or n.startswith(short + " "):
+            return full + n[len(short):]
+    return n
+
 # explicit raw-name -> canonical key overrides (checked after generic cleanup)
 ALIASES = {
     # OpenAI
@@ -85,6 +101,7 @@ def _flatten_parens(n: str) -> str:
 
 def canonical(raw: str) -> str:
     n = _flatten_parens(raw.strip().lower())
+    n = _expand_vendor_words(n)
     key = re.sub(r"[^a-z0-9]", "", n)
     if key in ALIASES:
         return ALIASES[key]
@@ -111,7 +128,10 @@ def _prettify(raw: str) -> str:
 def display_name(key: str, fallback_raw: str) -> str:
     if key in DISPLAY:
         return DISPLAY[key]
-    return _prettify(fallback_raw)
+    # expand short vendor prefixes so "Fable 5.1 Max" shows as
+    # "Claude Fable 5.1 Max"
+    words = _expand_vendor_words(_flatten_parens(fallback_raw).strip().lower())
+    return _prettify(words)
 
 ORG_ALIASES = {
     "zai": "Z.ai", "z.ai": "Z.ai",
