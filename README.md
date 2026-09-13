@@ -8,16 +8,18 @@ source breakdowns.
 
 The live site is served from this repo via GitHub Pages (`docs/`).
 
-## Sources (4 live, 1 optional) + pricing
+## Sources (7 live, 1 optional) + pricing
 
-| ID | Source | Measures | Tab | Key? |
-|----|--------|----------|-----|------|
-| `lmarena` | [LMArena](https://lmarena.ai/leaderboard) (public HF dataset, CC-BY-4.0) | Millions of blind human votes, Bradley-Terry rating | Chat | no |
-| `aa` | [Artificial Analysis](https://artificialanalysis.ai/) Intelligence Index API | Independent evals across ~10 benchmarks | Chat | **yes** (free) |
-| `aider` | [Aider](https://aider.chat/docs/leaderboards/) polyglot leaderboard | 225 real coding exercises, 6 languages | Coding | no |
-| `epoch` | [Epoch AI](https://epoch.ai/data/benchmark_data.zip) capabilities index (CC-BY-4.0) | Independent re-runs of hard benchmarks | Agents | no |
-| `livebench` | [LiveBench](https://livebench.ai/) GitHub CSVs | Fresh monthly questions, contamination-resistant scores | General (Overall only) | no |
-| `pricing` | [OpenRouter](https://openrouter.ai/api/v1/models) public models API | Live per-token prices → $ per 1M tokens (input/output) | Pricing | no |
+| ID | Source | Measures | Tab | Data date | Key? |
+|----|--------|----------|-----|-----------|------|
+| `lmarena` | [LMArena](https://lmarena.ai/leaderboard) (public HF dataset, CC-BY-4.0) | Millions of blind human votes, Bradley-Terry rating | Chat | 2026-09-11 | no |
+| `aa` | [Artificial Analysis](https://artificialanalysis.ai/) Intelligence Index API | Independent evals across ~10 benchmarks | Chat | — (skipped until key) | **yes** (free) |
+| `swebench` | [SWE-bench Verified](https://www.swebench.com/) (raw JSON from GitHub) | Real GitHub issue fixes, % resolved | Coding | 2026-02-26 | no |
+| `webdev` | [LMArena WebDev Arena](https://lmarena.ai/leaderboard) (public HF dataset, CC-BY-4.0) | Blind human votes on web-app builds, Bradley-Terry rating | Coding | 2026-09-11 | no |
+| `terminalbench` | [Terminal-Bench 2.1](https://www.tbench.ai/leaderboard/terminal-bench/2.1) | 89 hard terminal tasks run by an agent, accuracy % | Coding | 2026-09-10 | no |
+| `epoch` | [Epoch AI](https://epoch.ai/data/benchmark_data.zip) capabilities index (CC-BY-4.0) | Independent re-runs of hard benchmarks | Agents | (zip has no date) | no |
+| `livebench` | [LiveBench](https://livebench.ai/) GitHub CSVs | Fresh monthly questions, contamination-resistant scores | General (Overall only) | 2026-06-25 | no |
+| `pricing` | [OpenRouter](https://openrouter.ai/api/v1/models) public models API | Live per-token prices → $ per 1M tokens (input/output) | Pricing | live | no |
 
 ## Site features
 
