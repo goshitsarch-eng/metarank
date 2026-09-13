@@ -18,8 +18,14 @@ KNOWN_SOURCES = [
     {"id": "aa", "name": "Artificial Analysis", "url": "https://artificialanalysis.ai/",
      "what": "Independent Intelligence Index across ~10 evals",
      "category": "chat"},
-    {"id": "aider", "name": "Aider", "url": "https://aider.chat/docs/leaderboards/",
-     "what": "225 real coding exercises across 6 languages, % passing",
+    {"id": "swebench", "name": "SWE-bench Verified", "url": "https://www.swebench.com/",
+     "what": "Real GitHub issue fixes, % resolved (Verified split)",
+     "category": "coding"},
+    {"id": "webdev", "name": "LMArena WebDev", "url": "https://lmarena.ai/leaderboard",
+     "what": "Blind human votes on web-app builds, Bradley-Terry rating",
+     "category": "coding"},
+    {"id": "terminalbench", "name": "Terminal-Bench", "url": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
+     "what": "89 hard terminal tasks run by an agent, accuracy %",
      "category": "coding"},
     {"id": "epoch", "name": "Epoch AI", "url": "https://epoch.ai/benchmarks",
      "what": "Independent re-runs of hard benchmarks, combined capability index",
@@ -244,7 +250,7 @@ just winning one test &mdash; they're winning <i>everywhere</i>.</p>
 <div class="card">
 <h2><span class="dot"></span>Methodology</h2>
 <ol class="method">
-<li><b>Collect.</b> We pull the current leaderboard from each source above &mdash; human-preference votes (LMArena), independent benchmark re-runs (Epoch AI, Artificial Analysis), fresh monthly questions (LiveBench), and real coding tasks (Aider).</li>
+<li><b>Collect.</b> We pull the current leaderboard from each source above &mdash; human-preference votes (LMArena), independent benchmark re-runs (Epoch AI, Artificial Analysis), fresh monthly questions (LiveBench), and real coding tasks (SWE-bench, WebDev Arena, Terminal-Bench).</li>
 <li><b>Rank within each source.</b> Every model gets a rank (1st, 2nd, 3rd&hellip;) on each leaderboard it appears on.</li>
 <li><b>Match models.</b> The same model is often named differently per site, so we normalize casing and vendor names &mdash; but <b>every distinct variant stays its own row</b> (e.g. GPT-5, GPT-5 (high) and GPT-5 (low) are ranked separately, no roll-ups). We keep each variant's <i>best</i> rank per source.</li>
 <li><b>Average.</b> A model's <b>average rank</b> is the mean of its ranks across sources. Ties break on #1st-place finishes, then source count.</li>
