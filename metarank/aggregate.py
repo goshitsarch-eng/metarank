@@ -7,11 +7,11 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from metarank import normalize as N
 from metarank.fetchers import lmarena, epoch, livebench, artificialanalysis
-from metarank.fetchers import swebench, webdev, terminalbench
+from metarank.fetchers import swebench, webdev, terminalbench, cursorbench
 from metarank.fetchers import pricing as pricing_fetcher
 
 FETCHERS = [lmarena, epoch, livebench, artificialanalysis,
-            swebench, webdev, terminalbench]
+            swebench, webdev, terminalbench, cursorbench]
 MAX_MODELS = 60
 
 OPEN_MODELS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
