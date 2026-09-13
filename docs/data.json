@@ -1,0 +1,5152 @@
+{
+ "generated_at": "2026-09-13T03:55:47+00:00",
+ "sources": [
+  {
+   "id": "lmarena",
+   "name": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "what": "Millions of blind human votes, Bradley-Terry rating",
+   "category": "chat",
+   "data_date": "2026-09-11",
+   "n_models": 401
+  },
+  {
+   "id": "epoch",
+   "name": "Epoch AI",
+   "url": "https://epoch.ai/benchmarks",
+   "what": "Independent re-runs of hard benchmarks, combined capability index",
+   "category": "agents",
+   "data_date": null,
+   "n_models": 264
+  },
+  {
+   "id": "livebench",
+   "name": "LiveBench",
+   "url": "https://livebench.ai/",
+   "what": "Fresh monthly questions, contamination-resistant average score",
+   "category": "general",
+   "data_date": "2026-06-25",
+   "n_models": 28
+  },
+  {
+   "id": "aider",
+   "name": "Aider",
+   "url": "https://aider.chat/docs/leaderboards/",
+   "what": "225 real coding exercises across 6 languages, % passing",
+   "category": "coding",
+   "data_date": null,
+   "n_models": 68
+  }
+ ],
+ "tabs": {
+  "overall": {
+   "label": "Overall",
+   "blurb": "Consensus across every source",
+   "min_sources": 2,
+   "source_ids": [
+    "lmarena",
+    "epoch",
+    "livebench",
+    "aider"
+   ],
+   "models": [
+    {
+     "key": "claude-fable-5.1",
+     "name": "Claude Fable 5.1",
+     "org": "Anthropic",
+     "avg_rank": 1.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 1,
+      "epoch": 2,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "claude-opus-5",
+     "name": "Claude Opus 5",
+     "org": "Anthropic",
+     "avg_rank": 3.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 1
+     },
+     "ranks": {
+      "lmarena": 2,
+      "epoch": 4,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "claude-fable-5",
+     "name": "Claude Fable 5",
+     "org": "Anthropic",
+     "avg_rank": 4.0,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 7,
+      "epoch": 3,
+      "livebench": 2,
+      "aider": null
+     }
+    },
+    {
+     "key": "gemini-3.7-flash",
+     "name": "Gemini 3.7 Flash",
+     "org": "Google",
+     "avg_rank": 10.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 8,
+      "epoch": 12,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gemini31propreview",
+     "name": "Gemini 3.1 Pro Preview",
+     "org": "Google",
+     "avg_rank": 10.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 15,
+      "epoch": null,
+      "livebench": 6,
+      "aider": null
+     }
+    },
+    {
+     "key": "claude-opus-4.7",
+     "name": "Claude Opus 4.7",
+     "org": "Anthropic",
+     "avg_rank": 10.67,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 9,
+      "epoch": 16,
+      "livebench": 7,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt-5.5",
+     "name": "GPT-5.5",
+     "org": "OpenAI",
+     "avg_rank": 11.0,
+     "n_sources": 3,
+     "placements": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 24,
+      "epoch": 8,
+      "livebench": 1,
+      "aider": null
+     }
+    },
+    {
+     "key": "claude-opus-4.6",
+     "name": "Claude Opus 4.6",
+     "org": "Anthropic",
+     "avg_rank": 13.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "ranks": {
+      "lmarena": 4,
+      "epoch": 22,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "qwen38",
+     "name": "Qwen 3.8 Max",
+     "org": "Alibaba",
+     "avg_rank": 14.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 14,
+      "epoch": 14,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt54",
+     "name": "GPT-5.4",
+     "org": "OpenAI",
+     "avg_rank": 14.67,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 26,
+      "epoch": 13,
+      "livebench": 5,
+      "aider": null
+     }
+    },
+    {
+     "key": "muse-spark-1.2",
+     "name": "Muse Spark 1.2",
+     "org": "Meta",
+     "avg_rank": 15.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 10,
+      "epoch": 20,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "claude-opus-4.8",
+     "name": "Claude Opus 4.8",
+     "org": "Anthropic",
+     "avg_rank": 15.33,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 33,
+      "epoch": 10,
+      "livebench": 3,
+      "aider": null
+     }
+    },
+    {
+     "key": "gemini35flash",
+     "name": "Gemini 3.5 Flash",
+     "org": "Google",
+     "avg_rank": 15.67,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 12,
+      "epoch": 26,
+      "livebench": 9,
+      "aider": null
+     }
+    },
+    {
+     "key": "kimi-k3",
+     "name": "Kimi K3",
+     "org": "Moonshot AI",
+     "avg_rank": 16.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 22,
+      "epoch": 11,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "musespark11",
+     "name": "Muse Spark 1.1",
+     "org": "Meta",
+     "avg_rank": 20.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 13,
+      "epoch": 27,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "glm53",
+     "name": "GLM 5.3",
+     "org": "Z.ai",
+     "avg_rank": 20.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 17,
+      "epoch": 24,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "qwen37",
+     "name": "Qwen 3.7 Max",
+     "org": "Alibaba",
+     "avg_rank": 21.0,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 20,
+      "epoch": 31,
+      "livebench": 12,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt56sol",
+     "name": "GPT-5.6 Sol",
+     "org": "OpenAI",
+     "avg_rank": 22.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 38,
+      "epoch": 6,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gemini36flash",
+     "name": "Gemini 3.6 Flash",
+     "org": "Google",
+     "avg_rank": 24.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 19,
+      "epoch": 29,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gemini-3-pro",
+     "name": "Gemini 3 Pro",
+     "org": "Google",
+     "avg_rank": 24.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 16,
+      "epoch": 33,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "glm52",
+     "name": "GLM 5.2",
+     "org": "Z.ai",
+     "avg_rank": 26.67,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 28,
+      "epoch": 37,
+      "livebench": 15,
+      "aider": null
+     }
+    },
+    {
+     "key": "musespark",
+     "name": "Muse Spark",
+     "org": "Meta",
+     "avg_rank": 28.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 21,
+      "epoch": 35,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "claudesonnet5",
+     "name": "Claude Sonnet 5",
+     "org": "Anthropic",
+     "avg_rank": 29.0,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 60,
+      "epoch": 19,
+      "livebench": 8,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt56terra",
+     "name": "GPT-5.6 Terra",
+     "org": "OpenAI",
+     "avg_rank": 29.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 51,
+      "epoch": 7,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "o3pro",
+     "name": "o3 Pro",
+     "org": "OpenAI",
+     "avg_rank": 29.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": null,
+      "epoch": 55,
+      "livebench": null,
+      "aider": 3
+     }
+    },
+    {
+     "key": "gpt-6-astra",
+     "name": "GPT-6 Astra",
+     "org": "OpenAI",
+     "avg_rank": 31.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 61,
+      "epoch": 1,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "glm53flash",
+     "name": "GLM 5.3 Flash",
+     "org": "Z.ai",
+     "avg_rank": 31.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 23,
+      "epoch": 39,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "kimik26",
+     "name": "Kimi K2.6",
+     "org": "Moonshot AI",
+     "avg_rank": 31.67,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 36,
+      "epoch": 40,
+      "livebench": 19,
+      "aider": null
+     }
+    },
+    {
+     "key": "kimik27code",
+     "name": "Kimi K2.7 Code",
+     "org": "Moonshot AI",
+     "avg_rank": 33.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": null,
+      "epoch": 44,
+      "livebench": 22,
+      "aider": null
+     }
+    },
+    {
+     "key": "gemini-3-flash",
+     "name": "Gemini 3 Flash",
+     "org": "Google",
+     "avg_rank": 33.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 29,
+      "epoch": 38,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "claudesonnet46",
+     "name": "Claude Sonnet 4.6",
+     "org": "Anthropic",
+     "avg_rank": 34.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 34,
+      "epoch": 34,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "grok45",
+     "name": "Grok 4.5",
+     "org": "xAI",
+     "avg_rank": 35.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 41,
+      "epoch": 30,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "grok-4",
+     "name": "Grok 4",
+     "org": "xAI",
+     "avg_rank": 35.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": null,
+      "epoch": 64,
+      "livebench": null,
+      "aider": 7
+     }
+    },
+    {
+     "key": "deepseekv4pro",
+     "name": "DeepSeek V4 Pro",
+     "org": "DeepSeek",
+     "avg_rank": 36.33,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 42,
+      "epoch": 50,
+      "livebench": 17,
+      "aider": null
+     }
+    },
+    {
+     "key": "glm51",
+     "name": "GLM 5.1",
+     "org": "Z.ai",
+     "avg_rank": 39.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 32,
+      "epoch": 46,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "qwen3627b",
+     "name": "Qwen3.6 27B",
+     "org": "Alibaba",
+     "avg_rank": 44.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": null,
+      "epoch": 62,
+      "livebench": 27,
+      "aider": null
+     }
+    },
+    {
+     "key": "qwen37plus",
+     "name": "Qwen3.7 Plus",
+     "org": "Alibaba",
+     "avg_rank": 46.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 37,
+      "epoch": 56,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "qwen36plus",
+     "name": "Qwen 3.6 Plus",
+     "org": "Alibaba",
+     "avg_rank": 49.33,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 73,
+      "epoch": 54,
+      "livebench": 21,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt56luna",
+     "name": "GPT 5.6 Luna",
+     "org": "OpenAI",
+     "avg_rank": 50.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 83,
+      "epoch": 18,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "grok46",
+     "name": "Grok 4.6",
+     "org": "xAI",
+     "avg_rank": 51.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 86,
+      "epoch": 17,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "kimik25",
+     "name": "Kimi K2.5",
+     "org": "Moonshot AI",
+     "avg_rank": 52.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 52,
+      "epoch": 53,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gemini25pro",
+     "name": "Gemini 2.5 Pro",
+     "org": "Google",
+     "avg_rank": 54.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 35,
+      "epoch": 74,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt51",
+     "name": "GPT 5.1",
+     "org": "OpenAI",
+     "avg_rank": 54.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 62,
+      "epoch": 47,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "minimaxm3",
+     "name": "Minimax M3",
+     "org": "minimax",
+     "avg_rank": 55.67,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 80,
+      "epoch": 63,
+      "livebench": 24,
+      "aider": null
+     }
+    },
+    {
+     "key": "deepseekv4flash",
+     "name": "Deepseek V4 Flash",
+     "org": "DeepSeek",
+     "avg_rank": 58.33,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 82,
+      "epoch": 67,
+      "livebench": 26,
+      "aider": null
+     }
+    },
+    {
+     "key": "glm5",
+     "name": "Glm 5",
+     "org": "Z.ai",
+     "avg_rank": 59.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 50,
+      "epoch": 69,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt-5",
+     "name": "GPT-5",
+     "org": "OpenAI",
+     "avg_rank": 60.33,
+     "n_sources": 3,
+     "placements": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 135,
+      "epoch": 45,
+      "livebench": null,
+      "aider": 1
+     }
+    },
+    {
+     "key": "deepseekv32exp",
+     "name": "DeepSeek V3.2 Exp",
+     "org": "DeepSeek",
+     "avg_rank": 60.33,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 93,
+      "epoch": 76,
+      "livebench": null,
+      "aider": 12
+     }
+    },
+    {
+     "key": "inkling",
+     "name": "Inkling",
+     "org": "thinky",
+     "avg_rank": 60.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 69,
+      "epoch": 52,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "qwen35397ba17b",
+     "name": "Qwen3.5 397B A17B",
+     "org": "Alibaba",
+     "avg_rank": 63.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 70,
+      "epoch": 57,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "kimik2",
+     "name": "Kimi K2",
+     "org": "Moonshot AI",
+     "avg_rank": 73.0,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 122,
+      "epoch": 71,
+      "livebench": null,
+      "aider": 26
+     }
+    },
+    {
+     "key": "gemini35flashlite",
+     "name": "Gemini 3.5 Flash Lite",
+     "org": "Google",
+     "avg_rank": 75.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 75,
+      "epoch": 75,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt52",
+     "name": "GPT 5.2",
+     "org": "OpenAI",
+     "avg_rank": 75.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 118,
+      "epoch": 32,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt41",
+     "name": "GPT 4.1",
+     "org": "OpenAI",
+     "avg_rank": 79.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": null,
+      "epoch": 123,
+      "livebench": null,
+      "aider": 35
+     }
+    },
+    {
+     "key": "qwen3",
+     "name": "Qwen3",
+     "org": "Alibaba",
+     "avg_rank": 80.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 67,
+      "epoch": 93,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "deepseekv32",
+     "name": "Deepseek V3.2",
+     "org": "DeepSeek",
+     "avg_rank": 80.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 95,
+      "epoch": 66,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "glm47",
+     "name": "Glm 4.7",
+     "org": "Z.ai",
+     "avg_rank": 81.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 78,
+      "epoch": 85,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "glm46",
+     "name": "Glm 4.6",
+     "org": "Z.ai",
+     "avg_rank": 83.5,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 65,
+      "epoch": 102,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "inklingsmall",
+     "name": "Inkling Small",
+     "org": "thinky",
+     "avg_rank": 84.0,
+     "n_sources": 2,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 126,
+      "epoch": 42,
+      "livebench": null,
+      "aider": null
+     }
+    },
+    {
+     "key": "gpt54nano",
+     "name": "GPT 5.4 Nano",
+     "org": "OpenAI",
+     "avg_rank": 84.67,
+     "n_sources": 3,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 166,
+      "epoch": 68,
+      "livebench": 20,
+      "aider": null
+     }
+    }
+   ]
+  },
+  "chat": {
+   "label": "Chat",
+   "blurb": "Everyday chat / general use",
+   "min_sources": 1,
+   "source_ids": [
+    "lmarena"
+   ],
+   "models": [
+    {
+     "key": "claude-fable-5.1",
+     "name": "Claude Fable 5.1",
+     "org": "Anthropic",
+     "avg_rank": 1.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 1
+     }
+    },
+    {
+     "key": "claude-opus-5",
+     "name": "Claude Opus 5",
+     "org": "Anthropic",
+     "avg_rank": 2.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 2
+     }
+    },
+    {
+     "key": "claude-opus-4.6",
+     "name": "Claude Opus 4.6",
+     "org": "Anthropic",
+     "avg_rank": 4.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "ranks": {
+      "lmarena": 4
+     }
+    },
+    {
+     "key": "gemini-3.8-flash",
+     "name": "Gemini 3.8 Flash",
+     "org": "Google",
+     "avg_rank": 6.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 6
+     }
+    },
+    {
+     "key": "claude-fable-5",
+     "name": "Claude Fable 5",
+     "org": "Anthropic",
+     "avg_rank": 7.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 7
+     }
+    },
+    {
+     "key": "gemini-3.7-flash",
+     "name": "Gemini 3.7 Flash",
+     "org": "Google",
+     "avg_rank": 8.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 8
+     }
+    },
+    {
+     "key": "claude-opus-4.7",
+     "name": "Claude Opus 4.7",
+     "org": "Anthropic",
+     "avg_rank": 9.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 9
+     }
+    },
+    {
+     "key": "muse-spark-1.2",
+     "name": "Muse Spark 1.2",
+     "org": "Meta",
+     "avg_rank": 10.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 10
+     }
+    },
+    {
+     "key": "gemini35flash",
+     "name": "Gemini 3.5 Flash",
+     "org": "Google",
+     "avg_rank": 12.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 12
+     }
+    },
+    {
+     "key": "musespark11",
+     "name": "Muse Spark 1.1",
+     "org": "Meta",
+     "avg_rank": 13.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 13
+     }
+    },
+    {
+     "key": "qwen38",
+     "name": "Qwen 3.8 Max",
+     "org": "Alibaba",
+     "avg_rank": 14.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 14
+     }
+    },
+    {
+     "key": "gemini31propreview",
+     "name": "Gemini 3.1 Pro Preview",
+     "org": "Google",
+     "avg_rank": 15.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 15
+     }
+    },
+    {
+     "key": "gemini-3-pro",
+     "name": "Gemini 3 Pro",
+     "org": "Google",
+     "avg_rank": 16.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 16
+     }
+    },
+    {
+     "key": "glm53",
+     "name": "GLM 5.3",
+     "org": "Z.ai",
+     "avg_rank": 17.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 17
+     }
+    },
+    {
+     "key": "gemini35flashmedium",
+     "name": "Gemini 3.5 Flash Medium",
+     "org": "Google",
+     "avg_rank": 18.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 18
+     }
+    },
+    {
+     "key": "gemini36flash",
+     "name": "Gemini 3.6 Flash",
+     "org": "Google",
+     "avg_rank": 19.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 19
+     }
+    },
+    {
+     "key": "qwen37",
+     "name": "Qwen 3.7 Max",
+     "org": "Alibaba",
+     "avg_rank": 20.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 20
+     }
+    },
+    {
+     "key": "musespark",
+     "name": "Muse Spark",
+     "org": "Meta",
+     "avg_rank": 21.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 21
+     }
+    },
+    {
+     "key": "kimi-k3",
+     "name": "Kimi K3",
+     "org": "Moonshot AI",
+     "avg_rank": 22.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 22
+     }
+    },
+    {
+     "key": "glm53flash",
+     "name": "GLM 5.3 Flash",
+     "org": "Z.ai",
+     "avg_rank": 23.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 23
+     }
+    },
+    {
+     "key": "gpt-5.5",
+     "name": "GPT-5.5",
+     "org": "OpenAI",
+     "avg_rank": 24.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 24
+     }
+    },
+    {
+     "key": "qwen35",
+     "name": "Qwen3.5",
+     "org": "Alibaba",
+     "avg_rank": 25.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 25
+     }
+    },
+    {
+     "key": "gpt54",
+     "name": "GPT-5.4",
+     "org": "OpenAI",
+     "avg_rank": 26.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 26
+     }
+    },
+    {
+     "key": "ernie51",
+     "name": "Ernie 5.1",
+     "org": "baidu",
+     "avg_rank": 27.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 27
+     }
+    },
+    {
+     "key": "glm52",
+     "name": "GLM 5.2",
+     "org": "Z.ai",
+     "avg_rank": 28.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 28
+     }
+    },
+    {
+     "key": "gemini-3-flash",
+     "name": "Gemini 3 Flash",
+     "org": "Google",
+     "avg_rank": 29.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 29
+     }
+    },
+    {
+     "key": "mimov25pro",
+     "name": "Mimo V2.5 Pro",
+     "org": "xiaomi",
+     "avg_rank": 31.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 31
+     }
+    },
+    {
+     "key": "glm51",
+     "name": "GLM 5.1",
+     "org": "Z.ai",
+     "avg_rank": 32.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 32
+     }
+    },
+    {
+     "key": "claude-opus-4.8",
+     "name": "Claude Opus 4.8",
+     "org": "Anthropic",
+     "avg_rank": 33.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 33
+     }
+    },
+    {
+     "key": "claudesonnet46",
+     "name": "Claude Sonnet 4.6",
+     "org": "Anthropic",
+     "avg_rank": 34.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 34
+     }
+    },
+    {
+     "key": "gemini25pro",
+     "name": "Gemini 2.5 Pro",
+     "org": "Google",
+     "avg_rank": 35.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 35
+     }
+    },
+    {
+     "key": "kimik26",
+     "name": "Kimi K2.6",
+     "org": "Moonshot AI",
+     "avg_rank": 36.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 36
+     }
+    },
+    {
+     "key": "qwen37plus",
+     "name": "Qwen3.7 Plus",
+     "org": "Alibaba",
+     "avg_rank": 37.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 37
+     }
+    },
+    {
+     "key": "gpt56sol",
+     "name": "GPT-5.6 Sol",
+     "org": "OpenAI",
+     "avg_rank": 38.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 38
+     }
+    },
+    {
+     "key": "grok45",
+     "name": "Grok 4.5",
+     "org": "xAI",
+     "avg_rank": 41.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 41
+     }
+    },
+    {
+     "key": "deepseekv4pro",
+     "name": "DeepSeek V4 Pro",
+     "org": "DeepSeek",
+     "avg_rank": 42.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 42
+     }
+    },
+    {
+     "key": "grok420beta0309",
+     "name": "Grok 4.20 Beta 0309",
+     "org": "xAI",
+     "avg_rank": 43.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 43
+     }
+    },
+    {
+     "key": "claudeopus4520251101",
+     "name": "Claude Opus 4 5 20251101",
+     "org": "Anthropic",
+     "avg_rank": 44.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 44
+     }
+    },
+    {
+     "key": "grok420multiagentbeta0309",
+     "name": "Grok 4.20 Multi Agent Beta 0309",
+     "org": "xAI",
+     "avg_rank": 45.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 45
+     }
+    },
+    {
+     "key": "amazonnovaexperimentalchat260210",
+     "name": "Amazon Nova Experimental Chat 26 02 10",
+     "org": "amazon",
+     "avg_rank": 46.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 46
+     }
+    },
+    {
+     "key": "dolaseed20pro",
+     "name": "Dola Seed 2.0 Pro",
+     "org": "bytedance",
+     "avg_rank": 47.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 47
+     }
+    },
+    {
+     "key": "qwen36",
+     "name": "Qwen3.6",
+     "org": "Alibaba",
+     "avg_rank": 49.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 49
+     }
+    },
+    {
+     "key": "glm5",
+     "name": "Glm 5",
+     "org": "Z.ai",
+     "avg_rank": 50.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 50
+     }
+    },
+    {
+     "key": "gpt56terra",
+     "name": "GPT-5.6 Terra",
+     "org": "OpenAI",
+     "avg_rank": 51.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 51
+     }
+    },
+    {
+     "key": "kimik25",
+     "name": "Kimi K2.5",
+     "org": "Moonshot AI",
+     "avg_rank": 52.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 52
+     }
+    },
+    {
+     "key": "nvidianemotron3ultra550ba55bnvfp4",
+     "name": "Nvidia Nemotron 3 Ultra 550b A55b Nvfp4",
+     "org": "nvidia",
+     "avg_rank": 54.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 54
+     }
+    },
+    {
+     "key": "grok420beta1",
+     "name": "Grok 4.20 Beta1",
+     "org": "xAI",
+     "avg_rank": 55.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 55
+     }
+    },
+    {
+     "key": "ernie500110",
+     "name": "Ernie 5.0 0110",
+     "org": "baidu",
+     "avg_rank": 56.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 56
+     }
+    },
+    {
+     "key": "ernie50preview1203",
+     "name": "Ernie 5.0 Preview 1203",
+     "org": "baidu",
+     "avg_rank": 58.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 58
+     }
+    },
+    {
+     "key": "claudesonnet5",
+     "name": "Claude Sonnet 5",
+     "org": "Anthropic",
+     "avg_rank": 60.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 60
+     }
+    },
+    {
+     "key": "gpt-6-astra",
+     "name": "GPT-6 Astra",
+     "org": "OpenAI",
+     "avg_rank": 61.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 61
+     }
+    },
+    {
+     "key": "gpt51",
+     "name": "GPT 5.1",
+     "org": "OpenAI",
+     "avg_rank": 62.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 62
+     }
+    },
+    {
+     "key": "gemma431b",
+     "name": "Gemma 4 31b",
+     "org": "Google",
+     "avg_rank": 63.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 63
+     }
+    },
+    {
+     "key": "hy3",
+     "name": "Hy3",
+     "org": "tencent",
+     "avg_rank": 64.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 64
+     }
+    },
+    {
+     "key": "glm46",
+     "name": "Glm 4.6",
+     "org": "Z.ai",
+     "avg_rank": 65.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 65
+     }
+    },
+    {
+     "key": "qwen3827b",
+     "name": "Qwen3.8 27b",
+     "org": "Alibaba",
+     "avg_rank": 66.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 66
+     }
+    },
+    {
+     "key": "qwen3",
+     "name": "Qwen3",
+     "org": "Alibaba",
+     "avg_rank": 67.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 67
+     }
+    },
+    {
+     "key": "gpt52chatlatest20260210",
+     "name": "GPT 5.2 Chat Latest 20260210",
+     "org": "OpenAI",
+     "avg_rank": 68.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 68
+     }
+    },
+    {
+     "key": "inkling",
+     "name": "Inkling",
+     "org": "thinky",
+     "avg_rank": 69.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 69
+     }
+    },
+    {
+     "key": "qwen35397ba17b",
+     "name": "Qwen3.5 397b A17b",
+     "org": "Alibaba",
+     "avg_rank": 70.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "lmarena": 70
+     }
+    }
+   ]
+  },
+  "coding": {
+   "label": "Coding",
+   "blurb": "Real-world coding ability",
+   "min_sources": 1,
+   "source_ids": [
+    "aider"
+   ],
+   "models": [
+    {
+     "key": "gpt-5",
+     "name": "GPT-5",
+     "org": "OpenAI",
+     "avg_rank": 1.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 1
+     }
+    },
+    {
+     "key": "o3pro",
+     "name": "o3 Pro",
+     "org": "Unknown",
+     "avg_rank": 3.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 3
+     }
+    },
+    {
+     "key": "gemini25propreview0605",
+     "name": "Gemini 2.5 Pro Preview 06 05",
+     "org": "Google",
+     "avg_rank": 4.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "ranks": {
+      "aider": 4
+     }
+    },
+    {
+     "key": "o3",
+     "name": "O3",
+     "org": "Unknown",
+     "avg_rank": 6.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 6
+     }
+    },
+    {
+     "key": "grok-4",
+     "name": "Grok 4",
+     "org": "xAI",
+     "avg_rank": 7.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 7
+     }
+    },
+    {
+     "key": "o3gpt41",
+     "name": "O3 + GPT 4.1",
+     "org": "Unknown",
+     "avg_rank": 9.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 9
+     }
+    },
+    {
+     "key": "gemini25propreview0506",
+     "name": "Gemini 2.5 Pro Preview 05 06",
+     "org": "Google",
+     "avg_rank": 11.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 11
+     }
+    },
+    {
+     "key": "deepseekv32exp",
+     "name": "DeepSeek V3.2 Exp",
+     "org": "DeepSeek",
+     "avg_rank": 12.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 12
+     }
+    },
+    {
+     "key": "gemini25propreview0325",
+     "name": "Gemini 2.5 Pro Preview 03 25",
+     "org": "Google",
+     "avg_rank": 13.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 13
+     }
+    },
+    {
+     "key": "claudeopus420250514",
+     "name": "Claude Opus 4 20250514",
+     "org": "Anthropic",
+     "avg_rank": 14.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 14
+     }
+    },
+    {
+     "key": "o4mini",
+     "name": "O4",
+     "org": "Unknown",
+     "avg_rank": 15.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 15
+     }
+    },
+    {
+     "key": "deepseekr1",
+     "name": "DeepSeek R1",
+     "org": "DeepSeek",
+     "avg_rank": 16.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 16
+     }
+    },
+    {
+     "key": "claude37sonnet20250219",
+     "name": "Claude 3 7 Sonnet 20250219",
+     "org": "Anthropic",
+     "avg_rank": 19.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 19
+     }
+    },
+    {
+     "key": "deepseekr1claude35sonnet20241022",
+     "name": "DeepSeek R1 + Claude 3 5 Sonnet 20241022",
+     "org": "DeepSeek",
+     "avg_rank": 20.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 20
+     }
+    },
+    {
+     "key": "o120241217",
+     "name": "O1 2024 12 17",
+     "org": "Unknown",
+     "avg_rank": 21.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 21
+     }
+    },
+    {
+     "key": "claudesonnet420250514",
+     "name": "Claude Sonnet 4 20250514",
+     "org": "Anthropic",
+     "avg_rank": 22.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 22
+     }
+    },
+    {
+     "key": "o3mini",
+     "name": "O3",
+     "org": "Unknown",
+     "avg_rank": 24.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 24
+     }
+    },
+    {
+     "key": "qwen3235ba22bdiffnothinkalibabaapi",
+     "name": "Qwen3 235B A22B Diff, No Think, Alibaba API",
+     "org": "Alibaba",
+     "avg_rank": 25.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 25
+     }
+    },
+    {
+     "key": "kimik2",
+     "name": "Kimi K2",
+     "org": "Moonshot AI",
+     "avg_rank": 26.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 26
+     }
+    },
+    {
+     "key": "gemini25flashpreview0520",
+     "name": "Gemini 2.5 Flash Preview 05 20",
+     "org": "Google",
+     "avg_rank": 29.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 29
+     }
+    },
+    {
+     "key": "deepseekv3",
+     "name": "DeepSeek V3",
+     "org": "DeepSeek",
+     "avg_rank": 30.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 30
+     }
+    },
+    {
+     "key": "quasaralpha",
+     "name": "Quasar Alpha",
+     "org": "Unknown",
+     "avg_rank": 31.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 31
+     }
+    },
+    {
+     "key": "grok3beta",
+     "name": "Grok 3 Beta",
+     "org": "xAI",
+     "avg_rank": 33.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 33
+     }
+    },
+    {
+     "key": "optimusalpha",
+     "name": "Optimus Alpha",
+     "org": "Unknown",
+     "avg_rank": 34.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 34
+     }
+    },
+    {
+     "key": "gpt41",
+     "name": "GPT 4.1",
+     "org": "OpenAI",
+     "avg_rank": 35.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 35
+     }
+    },
+    {
+     "key": "claude35sonnet20241022",
+     "name": "Claude 3 5 Sonnet 20241022",
+     "org": "Anthropic",
+     "avg_rank": 36.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 36
+     }
+    },
+    {
+     "key": "grok3minibeta",
+     "name": "Grok 3 Mini Beta",
+     "org": "xAI",
+     "avg_rank": 37.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 37
+     }
+    },
+    {
+     "key": "deepseekchatv3",
+     "name": "DeepSeek Chat V3",
+     "org": "DeepSeek",
+     "avg_rank": 38.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 38
+     }
+    },
+    {
+     "key": "gemini25flashpreview0417",
+     "name": "Gemini 2.5 Flash Preview 04 17",
+     "org": "Google",
+     "avg_rank": 39.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 39
+     }
+    },
+    {
+     "key": "chatgpt4olatest",
+     "name": "Chatgpt 4o Latest",
+     "org": "Unknown",
+     "avg_rank": 40.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 40
+     }
+    },
+    {
+     "key": "gpt45preview",
+     "name": "GPT 4.5 Preview",
+     "org": "OpenAI",
+     "avg_rank": 41.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 41
+     }
+    },
+    {
+     "key": "gptoss120b",
+     "name": "GPT Oss 120b",
+     "org": "OpenAI",
+     "avg_rank": 43.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 43
+     }
+    },
+    {
+     "key": "qwen332b",
+     "name": "Qwen3 32B",
+     "org": "Alibaba",
+     "avg_rank": 44.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 44
+     }
+    },
+    {
+     "key": "geminiexp1206",
+     "name": "Gemini Exp 1206",
+     "org": "Google",
+     "avg_rank": 45.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 45
+     }
+    },
+    {
+     "key": "gemini20proexp0205",
+     "name": "Gemini 2.0 Pro Exp 02 05",
+     "org": "Google",
+     "avg_rank": 46.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 46
+     }
+    },
+    {
+     "key": "o1mini20240912",
+     "name": "O1 Mini 2024 09 12",
+     "org": "Unknown",
+     "avg_rank": 48.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 48
+     }
+    },
+    {
+     "key": "claude35haiku20241022",
+     "name": "Claude 3 5 Haiku 20241022",
+     "org": "Anthropic",
+     "avg_rank": 50.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 50
+     }
+    },
+    {
+     "key": "qwq32bqwen25coderinstruct",
+     "name": "QwQ 32B + Qwen 2.5 Coder Instruct",
+     "org": "Unknown",
+     "avg_rank": 52.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 52
+     }
+    },
+    {
+     "key": "gpt4o20240806",
+     "name": "GPT 4o 2024 08 06",
+     "org": "OpenAI",
+     "avg_rank": 53.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 53
+     }
+    },
+    {
+     "key": "gemini20flashexp",
+     "name": "Gemini 2.0 Flash Exp",
+     "org": "Google",
+     "avg_rank": 54.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 54
+     }
+    },
+    {
+     "key": "qwenmax20250125",
+     "name": "Qwen Max 2025 01 25",
+     "org": "Alibaba",
+     "avg_rank": 55.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 55
+     }
+    },
+    {
+     "key": "qwq32b",
+     "name": "QwQ 32B",
+     "org": "Unknown",
+     "avg_rank": 56.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 56
+     }
+    },
+    {
+     "key": "gemini20flashthinkingexp0121",
+     "name": "Gemini 2.0 Flash Thinking Exp 01 21",
+     "org": "Google",
+     "avg_rank": 57.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 57
+     }
+    },
+    {
+     "key": "gpt4o20241120",
+     "name": "GPT 4o 2024 11 20",
+     "org": "OpenAI",
+     "avg_rank": 58.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 58
+     }
+    },
+    {
+     "key": "deepseekchatv25",
+     "name": "DeepSeek Chat V2.5",
+     "org": "DeepSeek",
+     "avg_rank": 59.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 59
+     }
+    },
+    {
+     "key": "qwen25coder32binstruct",
+     "name": "Qwen2.5 Coder 32B Instruct",
+     "org": "Alibaba",
+     "avg_rank": 60.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 60
+     }
+    },
+    {
+     "key": "llama4maverick",
+     "name": "Llama 4 Maverick",
+     "org": "Meta",
+     "avg_rank": 61.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 61
+     }
+    },
+    {
+     "key": "yilightning",
+     "name": "Yi Lightning",
+     "org": "Unknown",
+     "avg_rank": 62.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 62
+     }
+    },
+    {
+     "key": "commanda032025quality",
+     "name": "Command A 03 2025 Quality",
+     "org": "Unknown",
+     "avg_rank": 63.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 63
+     }
+    },
+    {
+     "key": "codestral2501",
+     "name": "Codestral 25.01",
+     "org": "Unknown",
+     "avg_rank": 64.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 64
+     }
+    },
+    {
+     "key": "openhandslm32bv01",
+     "name": "Openhands Lm 32b V0.1",
+     "org": "Unknown",
+     "avg_rank": 65.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 65
+     }
+    },
+    {
+     "key": "gpt41nano",
+     "name": "GPT 4.1 Nano",
+     "org": "OpenAI",
+     "avg_rank": 66.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 66
+     }
+    },
+    {
+     "key": "gemma327bit",
+     "name": "Gemma 3 27b It",
+     "org": "Unknown",
+     "avg_rank": 67.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 67
+     }
+    },
+    {
+     "key": "gpt4omini20240718",
+     "name": "GPT 4o Mini 2024 07 18",
+     "org": "OpenAI",
+     "avg_rank": 68.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "aider": 68
+     }
+    }
+   ]
+  },
+  "agents": {
+   "label": "Agents",
+   "blurb": "Hard benchmarks & agentic capability",
+   "min_sources": 1,
+   "source_ids": [
+    "epoch"
+   ],
+   "models": [
+    {
+     "key": "gpt-6-astra",
+     "name": "GPT-6 Astra",
+     "org": "OpenAI",
+     "avg_rank": 1.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 1
+     }
+    },
+    {
+     "key": "claude-fable-5.1",
+     "name": "Claude Fable 5.1",
+     "org": "Anthropic",
+     "avg_rank": 2.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 2
+     }
+    },
+    {
+     "key": "claude-fable-5",
+     "name": "Claude Fable 5",
+     "org": "Anthropic",
+     "avg_rank": 3.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 3
+     }
+    },
+    {
+     "key": "claude-opus-5",
+     "name": "Claude Opus 5",
+     "org": "Anthropic",
+     "avg_rank": 4.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "ranks": {
+      "epoch": 4
+     }
+    },
+    {
+     "key": "gpt-5.5-pro",
+     "name": "GPT-5.5 Pro",
+     "org": "OpenAI",
+     "avg_rank": 5.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 5
+     }
+    },
+    {
+     "key": "gpt56sol",
+     "name": "GPT-5.6 Sol",
+     "org": "OpenAI",
+     "avg_rank": 6.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 6
+     }
+    },
+    {
+     "key": "gpt56terra",
+     "name": "GPT-5.6 Terra",
+     "org": "OpenAI",
+     "avg_rank": 7.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 7
+     }
+    },
+    {
+     "key": "gpt-5.5",
+     "name": "GPT-5.5",
+     "org": "OpenAI",
+     "avg_rank": 8.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 8
+     }
+    },
+    {
+     "key": "gpt-5.4-pro",
+     "name": "GPT-5.4 Pro",
+     "org": "OpenAI",
+     "avg_rank": 9.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 9
+     }
+    },
+    {
+     "key": "claude-opus-4.8",
+     "name": "Claude Opus 4.8",
+     "org": "Anthropic",
+     "avg_rank": 10.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 10
+     }
+    },
+    {
+     "key": "kimi-k3",
+     "name": "Kimi K3",
+     "org": "Moonshot AI",
+     "avg_rank": 11.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 11
+     }
+    },
+    {
+     "key": "gemini-3.7-flash",
+     "name": "Gemini 3.7 Flash",
+     "org": "Google",
+     "avg_rank": 12.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 12
+     }
+    },
+    {
+     "key": "gpt54",
+     "name": "GPT-5.4",
+     "org": "OpenAI",
+     "avg_rank": 13.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 13
+     }
+    },
+    {
+     "key": "qwen38",
+     "name": "Qwen 3.8 Max",
+     "org": "Alibaba",
+     "avg_rank": 14.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 14
+     }
+    },
+    {
+     "key": "gpt53codex",
+     "name": "GPT 5.3 Codex",
+     "org": "OpenAI",
+     "avg_rank": 15.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 15
+     }
+    },
+    {
+     "key": "claude-opus-4.7",
+     "name": "Claude Opus 4.7",
+     "org": "Anthropic",
+     "avg_rank": 16.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 16
+     }
+    },
+    {
+     "key": "grok46",
+     "name": "Grok 4.6",
+     "org": "xAI",
+     "avg_rank": 17.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 17
+     }
+    },
+    {
+     "key": "gpt56luna",
+     "name": "GPT 5.6 Luna",
+     "org": "OpenAI",
+     "avg_rank": 18.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 18
+     }
+    },
+    {
+     "key": "claudesonnet5",
+     "name": "Claude Sonnet 5",
+     "org": "Anthropic",
+     "avg_rank": 19.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 19
+     }
+    },
+    {
+     "key": "muse-spark-1.2",
+     "name": "Muse Spark 1.2",
+     "org": "Meta AI",
+     "avg_rank": 20.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 20
+     }
+    },
+    {
+     "key": "deepseekv4pro0813",
+     "name": "DeepSeek V4 Pro 0813",
+     "org": "DeepSeek",
+     "avg_rank": 21.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 21
+     }
+    },
+    {
+     "key": "claude-opus-4.6",
+     "name": "Claude Opus 4.6",
+     "org": "Anthropic",
+     "avg_rank": 22.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 22
+     }
+    },
+    {
+     "key": "gpt52pro",
+     "name": "GPT 5.2 Pro",
+     "org": "OpenAI",
+     "avg_rank": 23.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 23
+     }
+    },
+    {
+     "key": "glm53",
+     "name": "GLM 5.3",
+     "org": "Z.ai (Zhipu AI)",
+     "avg_rank": 24.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 24
+     }
+    },
+    {
+     "key": "gemini31pro",
+     "name": "Gemini 3.1 Pro",
+     "org": "Google",
+     "avg_rank": 25.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 25
+     }
+    },
+    {
+     "key": "gemini35flash",
+     "name": "Gemini 3.5 Flash",
+     "org": "Google",
+     "avg_rank": 26.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 26
+     }
+    },
+    {
+     "key": "musespark11",
+     "name": "Muse Spark 1.1",
+     "org": "Meta AI",
+     "avg_rank": 27.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 27
+     }
+    },
+    {
+     "key": "deepseekv4flash0731",
+     "name": "DeepSeek V4 Flash 0731",
+     "org": "DeepSeek",
+     "avg_rank": 28.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 28
+     }
+    },
+    {
+     "key": "gemini36flash",
+     "name": "Gemini 3.6 Flash",
+     "org": "Google",
+     "avg_rank": 29.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 29
+     }
+    },
+    {
+     "key": "grok45",
+     "name": "Grok 4.5",
+     "org": "xAI",
+     "avg_rank": 30.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 30
+     }
+    },
+    {
+     "key": "qwen37",
+     "name": "Qwen 3.7 Max",
+     "org": "Alibaba",
+     "avg_rank": 31.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 31
+     }
+    },
+    {
+     "key": "gpt52",
+     "name": "GPT 5.2",
+     "org": "OpenAI",
+     "avg_rank": 32.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 32
+     }
+    },
+    {
+     "key": "gemini-3-pro",
+     "name": "Gemini 3 Pro",
+     "org": "Google",
+     "avg_rank": 33.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 33
+     }
+    },
+    {
+     "key": "claudesonnet46",
+     "name": "Claude Sonnet 4.6",
+     "org": "Anthropic",
+     "avg_rank": 34.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 34
+     }
+    },
+    {
+     "key": "musespark",
+     "name": "Muse Spark",
+     "org": "Meta AI",
+     "avg_rank": 35.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 35
+     }
+    },
+    {
+     "key": "grok-4.20",
+     "name": "Grok 4.20",
+     "org": "xAI",
+     "avg_rank": 36.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 36
+     }
+    },
+    {
+     "key": "glm52",
+     "name": "GLM 5.2",
+     "org": "Z.ai (Zhipu AI)",
+     "avg_rank": 37.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 37
+     }
+    },
+    {
+     "key": "gemini-3-flash",
+     "name": "Gemini 3 Flash",
+     "org": "Google",
+     "avg_rank": 38.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 38
+     }
+    },
+    {
+     "key": "glm53flash",
+     "name": "GLM 5.3 Flash",
+     "org": "Z.ai (Zhipu AI)",
+     "avg_rank": 39.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 39
+     }
+    },
+    {
+     "key": "kimik26",
+     "name": "Kimi K2.6",
+     "org": "Moonshot AI",
+     "avg_rank": 40.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 40
+     }
+    },
+    {
+     "key": "gpt5pro",
+     "name": "GPT 5 Pro",
+     "org": "OpenAI",
+     "avg_rank": 41.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 41
+     }
+    },
+    {
+     "key": "inklingsmall",
+     "name": "Inkling Small",
+     "org": "Thinking Machines",
+     "avg_rank": 42.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 42
+     }
+    },
+    {
+     "key": "claudeopus45",
+     "name": "Claude Opus 4.5",
+     "org": "Anthropic",
+     "avg_rank": 43.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 43
+     }
+    },
+    {
+     "key": "kimik27code",
+     "name": "Kimi K2.7 Code",
+     "org": "Moonshot AI",
+     "avg_rank": 44.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 44
+     }
+    },
+    {
+     "key": "gpt-5",
+     "name": "GPT-5",
+     "org": "OpenAI",
+     "avg_rank": 45.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 45
+     }
+    },
+    {
+     "key": "glm51",
+     "name": "GLM 5.1",
+     "org": "Z.ai (Zhipu AI)",
+     "avg_rank": 46.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 46
+     }
+    },
+    {
+     "key": "gpt51",
+     "name": "GPT 5.1",
+     "org": "OpenAI",
+     "avg_rank": 47.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 47
+     }
+    },
+    {
+     "key": "qwen36max",
+     "name": "Qwen 3.6",
+     "org": "Alibaba",
+     "avg_rank": 48.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 48
+     }
+    },
+    {
+     "key": "grok43beta",
+     "name": "Grok 4.3 Beta",
+     "org": "xAI",
+     "avg_rank": 49.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 49
+     }
+    },
+    {
+     "key": "deepseekv4pro",
+     "name": "DeepSeek V4 Pro",
+     "org": "DeepSeek",
+     "avg_rank": 50.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 50
+     }
+    },
+    {
+     "key": "inkling",
+     "name": "Inkling",
+     "org": "Thinking Machines",
+     "avg_rank": 52.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 52
+     }
+    },
+    {
+     "key": "kimik25",
+     "name": "Kimi K2.5",
+     "org": "Moonshot AI",
+     "avg_rank": 53.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 53
+     }
+    },
+    {
+     "key": "qwen36plus",
+     "name": "Qwen 3.6 Plus",
+     "org": "Alibaba",
+     "avg_rank": 54.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 54
+     }
+    },
+    {
+     "key": "o3pro",
+     "name": "o3 Pro",
+     "org": "OpenAI",
+     "avg_rank": 55.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 55
+     }
+    },
+    {
+     "key": "qwen37plus",
+     "name": "Qwen3.7 Plus",
+     "org": "Alibaba",
+     "avg_rank": 56.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 56
+     }
+    },
+    {
+     "key": "qwen35397ba17b",
+     "name": "Qwen3.5 397B A17B",
+     "org": "Alibaba",
+     "avg_rank": 57.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 57
+     }
+    },
+    {
+     "key": "o3",
+     "name": "O3",
+     "org": "OpenAI",
+     "avg_rank": 58.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 58
+     }
+    },
+    {
+     "key": "claudesonnet45",
+     "name": "Claude Sonnet 4.5",
+     "org": "Anthropic",
+     "avg_rank": 59.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 59
+     }
+    },
+    {
+     "key": "qwen35plus",
+     "name": "Qwen 3.5 Plus",
+     "org": "Alibaba",
+     "avg_rank": 60.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 60
+     }
+    },
+    {
+     "key": "minimaxm25",
+     "name": "MiniMax M2.5",
+     "org": "MiniMax",
+     "avg_rank": 61.0,
+     "n_sources": 1,
+     "placements": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "ranks": {
+      "epoch": 61
+     }
+    }
+   ]
+  }
+ },
+ "models": [
+  {
+   "key": "claude-fable-5.1",
+   "name": "Claude Fable 5.1",
+   "org": "Anthropic",
+   "avg_rank": 1.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 1,
+    "2": 1,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 1,
+    "epoch": 2,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "claude-opus-5",
+   "name": "Claude Opus 5",
+   "org": "Anthropic",
+   "avg_rank": 3.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 1,
+    "3": 0,
+    "4": 1
+   },
+   "ranks": {
+    "lmarena": 2,
+    "epoch": 4,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "claude-fable-5",
+   "name": "Claude Fable 5",
+   "org": "Anthropic",
+   "avg_rank": 4.0,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 1,
+    "3": 1,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 7,
+    "epoch": 3,
+    "livebench": 2,
+    "aider": null
+   }
+  },
+  {
+   "key": "gemini-3.7-flash",
+   "name": "Gemini 3.7 Flash",
+   "org": "Google",
+   "avg_rank": 10.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 8,
+    "epoch": 12,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gemini31propreview",
+   "name": "Gemini 3.1 Pro Preview",
+   "org": "Google",
+   "avg_rank": 10.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 15,
+    "epoch": null,
+    "livebench": 6,
+    "aider": null
+   }
+  },
+  {
+   "key": "claude-opus-4.7",
+   "name": "Claude Opus 4.7",
+   "org": "Anthropic",
+   "avg_rank": 10.67,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 9,
+    "epoch": 16,
+    "livebench": 7,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt-5.5",
+   "name": "GPT-5.5",
+   "org": "OpenAI",
+   "avg_rank": 11.0,
+   "n_sources": 3,
+   "placements": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 24,
+    "epoch": 8,
+    "livebench": 1,
+    "aider": null
+   }
+  },
+  {
+   "key": "claude-opus-4.6",
+   "name": "Claude Opus 4.6",
+   "org": "Anthropic",
+   "avg_rank": 13.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1
+   },
+   "ranks": {
+    "lmarena": 4,
+    "epoch": 22,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "qwen38",
+   "name": "Qwen 3.8 Max",
+   "org": "Alibaba",
+   "avg_rank": 14.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 14,
+    "epoch": 14,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt54",
+   "name": "GPT-5.4",
+   "org": "OpenAI",
+   "avg_rank": 14.67,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 26,
+    "epoch": 13,
+    "livebench": 5,
+    "aider": null
+   }
+  },
+  {
+   "key": "muse-spark-1.2",
+   "name": "Muse Spark 1.2",
+   "org": "Meta",
+   "avg_rank": 15.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 10,
+    "epoch": 20,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "claude-opus-4.8",
+   "name": "Claude Opus 4.8",
+   "org": "Anthropic",
+   "avg_rank": 15.33,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 33,
+    "epoch": 10,
+    "livebench": 3,
+    "aider": null
+   }
+  },
+  {
+   "key": "gemini35flash",
+   "name": "Gemini 3.5 Flash",
+   "org": "Google",
+   "avg_rank": 15.67,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 12,
+    "epoch": 26,
+    "livebench": 9,
+    "aider": null
+   }
+  },
+  {
+   "key": "kimi-k3",
+   "name": "Kimi K3",
+   "org": "Moonshot AI",
+   "avg_rank": 16.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 22,
+    "epoch": 11,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "musespark11",
+   "name": "Muse Spark 1.1",
+   "org": "Meta",
+   "avg_rank": 20.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 13,
+    "epoch": 27,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "glm53",
+   "name": "GLM 5.3",
+   "org": "Z.ai",
+   "avg_rank": 20.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 17,
+    "epoch": 24,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "qwen37",
+   "name": "Qwen 3.7 Max",
+   "org": "Alibaba",
+   "avg_rank": 21.0,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 20,
+    "epoch": 31,
+    "livebench": 12,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt56sol",
+   "name": "GPT-5.6 Sol",
+   "org": "OpenAI",
+   "avg_rank": 22.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 38,
+    "epoch": 6,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gemini36flash",
+   "name": "Gemini 3.6 Flash",
+   "org": "Google",
+   "avg_rank": 24.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 19,
+    "epoch": 29,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gemini-3-pro",
+   "name": "Gemini 3 Pro",
+   "org": "Google",
+   "avg_rank": 24.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 16,
+    "epoch": 33,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "glm52",
+   "name": "GLM 5.2",
+   "org": "Z.ai",
+   "avg_rank": 26.67,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 28,
+    "epoch": 37,
+    "livebench": 15,
+    "aider": null
+   }
+  },
+  {
+   "key": "musespark",
+   "name": "Muse Spark",
+   "org": "Meta",
+   "avg_rank": 28.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 21,
+    "epoch": 35,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "claudesonnet5",
+   "name": "Claude Sonnet 5",
+   "org": "Anthropic",
+   "avg_rank": 29.0,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 60,
+    "epoch": 19,
+    "livebench": 8,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt56terra",
+   "name": "GPT-5.6 Terra",
+   "org": "OpenAI",
+   "avg_rank": 29.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 51,
+    "epoch": 7,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "o3pro",
+   "name": "o3 Pro",
+   "org": "OpenAI",
+   "avg_rank": 29.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": null,
+    "epoch": 55,
+    "livebench": null,
+    "aider": 3
+   }
+  },
+  {
+   "key": "gpt-6-astra",
+   "name": "GPT-6 Astra",
+   "org": "OpenAI",
+   "avg_rank": 31.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 61,
+    "epoch": 1,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "glm53flash",
+   "name": "GLM 5.3 Flash",
+   "org": "Z.ai",
+   "avg_rank": 31.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 23,
+    "epoch": 39,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "kimik26",
+   "name": "Kimi K2.6",
+   "org": "Moonshot AI",
+   "avg_rank": 31.67,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 36,
+    "epoch": 40,
+    "livebench": 19,
+    "aider": null
+   }
+  },
+  {
+   "key": "kimik27code",
+   "name": "Kimi K2.7 Code",
+   "org": "Moonshot AI",
+   "avg_rank": 33.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": null,
+    "epoch": 44,
+    "livebench": 22,
+    "aider": null
+   }
+  },
+  {
+   "key": "gemini-3-flash",
+   "name": "Gemini 3 Flash",
+   "org": "Google",
+   "avg_rank": 33.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 29,
+    "epoch": 38,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "claudesonnet46",
+   "name": "Claude Sonnet 4.6",
+   "org": "Anthropic",
+   "avg_rank": 34.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 34,
+    "epoch": 34,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "grok45",
+   "name": "Grok 4.5",
+   "org": "xAI",
+   "avg_rank": 35.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 41,
+    "epoch": 30,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "grok-4",
+   "name": "Grok 4",
+   "org": "xAI",
+   "avg_rank": 35.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": null,
+    "epoch": 64,
+    "livebench": null,
+    "aider": 7
+   }
+  },
+  {
+   "key": "deepseekv4pro",
+   "name": "DeepSeek V4 Pro",
+   "org": "DeepSeek",
+   "avg_rank": 36.33,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 42,
+    "epoch": 50,
+    "livebench": 17,
+    "aider": null
+   }
+  },
+  {
+   "key": "glm51",
+   "name": "GLM 5.1",
+   "org": "Z.ai",
+   "avg_rank": 39.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 32,
+    "epoch": 46,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "qwen3627b",
+   "name": "Qwen3.6 27B",
+   "org": "Alibaba",
+   "avg_rank": 44.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": null,
+    "epoch": 62,
+    "livebench": 27,
+    "aider": null
+   }
+  },
+  {
+   "key": "qwen37plus",
+   "name": "Qwen3.7 Plus",
+   "org": "Alibaba",
+   "avg_rank": 46.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 37,
+    "epoch": 56,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "qwen36plus",
+   "name": "Qwen 3.6 Plus",
+   "org": "Alibaba",
+   "avg_rank": 49.33,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 73,
+    "epoch": 54,
+    "livebench": 21,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt56luna",
+   "name": "GPT 5.6 Luna",
+   "org": "OpenAI",
+   "avg_rank": 50.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 83,
+    "epoch": 18,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "grok46",
+   "name": "Grok 4.6",
+   "org": "xAI",
+   "avg_rank": 51.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 86,
+    "epoch": 17,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "kimik25",
+   "name": "Kimi K2.5",
+   "org": "Moonshot AI",
+   "avg_rank": 52.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 52,
+    "epoch": 53,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gemini25pro",
+   "name": "Gemini 2.5 Pro",
+   "org": "Google",
+   "avg_rank": 54.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 35,
+    "epoch": 74,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt51",
+   "name": "GPT 5.1",
+   "org": "OpenAI",
+   "avg_rank": 54.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 62,
+    "epoch": 47,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "minimaxm3",
+   "name": "Minimax M3",
+   "org": "minimax",
+   "avg_rank": 55.67,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 80,
+    "epoch": 63,
+    "livebench": 24,
+    "aider": null
+   }
+  },
+  {
+   "key": "deepseekv4flash",
+   "name": "Deepseek V4 Flash",
+   "org": "DeepSeek",
+   "avg_rank": 58.33,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 82,
+    "epoch": 67,
+    "livebench": 26,
+    "aider": null
+   }
+  },
+  {
+   "key": "glm5",
+   "name": "Glm 5",
+   "org": "Z.ai",
+   "avg_rank": 59.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 50,
+    "epoch": 69,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt-5",
+   "name": "GPT-5",
+   "org": "OpenAI",
+   "avg_rank": 60.33,
+   "n_sources": 3,
+   "placements": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 135,
+    "epoch": 45,
+    "livebench": null,
+    "aider": 1
+   }
+  },
+  {
+   "key": "deepseekv32exp",
+   "name": "DeepSeek V3.2 Exp",
+   "org": "DeepSeek",
+   "avg_rank": 60.33,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 93,
+    "epoch": 76,
+    "livebench": null,
+    "aider": 12
+   }
+  },
+  {
+   "key": "inkling",
+   "name": "Inkling",
+   "org": "thinky",
+   "avg_rank": 60.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 69,
+    "epoch": 52,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "qwen35397ba17b",
+   "name": "Qwen3.5 397B A17B",
+   "org": "Alibaba",
+   "avg_rank": 63.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 70,
+    "epoch": 57,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "kimik2",
+   "name": "Kimi K2",
+   "org": "Moonshot AI",
+   "avg_rank": 73.0,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 122,
+    "epoch": 71,
+    "livebench": null,
+    "aider": 26
+   }
+  },
+  {
+   "key": "gemini35flashlite",
+   "name": "Gemini 3.5 Flash Lite",
+   "org": "Google",
+   "avg_rank": 75.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 75,
+    "epoch": 75,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt52",
+   "name": "GPT 5.2",
+   "org": "OpenAI",
+   "avg_rank": 75.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 118,
+    "epoch": 32,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt41",
+   "name": "GPT 4.1",
+   "org": "OpenAI",
+   "avg_rank": 79.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": null,
+    "epoch": 123,
+    "livebench": null,
+    "aider": 35
+   }
+  },
+  {
+   "key": "qwen3",
+   "name": "Qwen3",
+   "org": "Alibaba",
+   "avg_rank": 80.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 67,
+    "epoch": 93,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "deepseekv32",
+   "name": "Deepseek V3.2",
+   "org": "DeepSeek",
+   "avg_rank": 80.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 95,
+    "epoch": 66,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "glm47",
+   "name": "Glm 4.7",
+   "org": "Z.ai",
+   "avg_rank": 81.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 78,
+    "epoch": 85,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "glm46",
+   "name": "Glm 4.6",
+   "org": "Z.ai",
+   "avg_rank": 83.5,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 65,
+    "epoch": 102,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "inklingsmall",
+   "name": "Inkling Small",
+   "org": "thinky",
+   "avg_rank": 84.0,
+   "n_sources": 2,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 126,
+    "epoch": 42,
+    "livebench": null,
+    "aider": null
+   }
+  },
+  {
+   "key": "gpt54nano",
+   "name": "GPT 5.4 Nano",
+   "org": "OpenAI",
+   "avg_rank": 84.67,
+   "n_sources": 3,
+   "placements": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0
+   },
+   "ranks": {
+    "lmarena": 166,
+    "epoch": 68,
+    "livebench": 20,
+    "aider": null
+   }
+  }
+ ]
+}
