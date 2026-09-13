@@ -1,11 +1,14 @@
-"""Canonical model keys so the same model matches across leaderboards."""
+"""Canonical model keys so the same model matches across leaderboards.
+
+No-rollup policy: normalization only handles casing, punctuation, and
+vendor naming -- every distinct variant stays its own row (e.g. "GPT-5",
+"GPT-5 (high)" and "GPT-5 (low)" are three separate models). Parenthetical
+content is kept as part of the key so reasoning-effort variants don't merge.
+"""
 import re
 
-EFFORT_SUFFIX = re.compile(
-    r"[\s_\-]*\((xhigh|high|max|low|mini)\)\s*$"
-    r"|[\s_\-]+(xhigh|high|max|low|mini|thinking|reasoning)(-[a-z0-9]+)?$",
-    re.I)
-PAREN = re.compile(r"\s*\([^)]*\)\s*")
+PAREN_OPEN = re.compile(r"\s*\(\s*")
+PAREN_CLOSE = re.compile(r"\s*\)\s*")
 
 # explicit raw-name -> canonical key overrides (checked after generic cleanup)
 ALIASES = {
@@ -72,22 +75,25 @@ ORG = {
     "mistral": "Mistral",
 }
 
+def _flatten_parens(n: str) -> str:
+    """Turn '(...)' into plain words so variant info survives in the key."""
+    n = PAREN_OPEN.sub(" ", n)
+    n = PAREN_CLOSE.sub(" ", n)
+    return re.sub(r"\s+", " ", n).strip()
+
 def canonical(raw: str) -> str:
-    n = raw.strip().lower()
-    n = PAREN.sub(" ", n)
-    n = EFFORT_SUFFIX.sub("", n).strip()
+    n = _flatten_parens(raw.strip().lower())
     key = re.sub(r"[^a-z0-9]", "", n)
     if key in ALIASES:
         return ALIASES[key]
     # reinsert readability: try dotted version match
-    dotted = re.sub(r"[^a-z0-9.]", "", n.lower())
+    dotted = re.sub(r"[^a-z0-9.]", "", n)
     if dotted in ALIASES:
         return ALIASES[dotted]
     return key
 
 def _prettify(raw: str) -> str:
-    n = PAREN.sub(" ", raw).strip()
-    n = EFFORT_SUFFIX.sub("", n).strip()
+    n = _flatten_parens(raw).strip()
     n = re.sub(r"[-_]+", " ", n)
     n = re.sub(r"\s+", " ", n)
     words = []
