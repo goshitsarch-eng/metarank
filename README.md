@@ -8,7 +8,7 @@ source breakdowns.
 
 The live site is served from this repo via GitHub Pages (`docs/`).
 
-## Sources (7 live, 1 optional) + pricing
+## Sources (8 live, 1 optional) + pricing
 
 | ID | Source | Measures | Tab | Data date | Key? |
 |----|--------|----------|-----|-----------|------|
@@ -17,6 +17,7 @@ The live site is served from this repo via GitHub Pages (`docs/`).
 | `swebench` | [SWE-bench Verified](https://www.swebench.com/) (raw JSON from GitHub) | Real GitHub issue fixes, % resolved | Coding | 2026-02-26 | no |
 | `webdev` | [LMArena WebDev Arena](https://lmarena.ai/leaderboard) (public HF dataset, CC-BY-4.0) | Blind human votes on web-app builds, Bradley-Terry rating | Coding | 2026-09-11 | no |
 | `terminalbench` | [Terminal-Bench 2.1](https://www.tbench.ai/leaderboard/terminal-bench/2.1) | 89 hard terminal tasks run by an agent, accuracy % | Coding | 2026-09-10 | no |
+| `cursorbench` | [CursorBench](https://cursor.com/cursorbench) (SSR HTML table, 43 models) | Ambiguous multi-file coding tasks from real Cursor sessions, score % | Coding | 2026-09-12 | no |
 | `epoch` | [Epoch AI](https://epoch.ai/data/benchmark_data.zip) capabilities index (CC-BY-4.0) | Independent re-runs of hard benchmarks | Agents | (zip has no date) | no |
 | `livebench` | [LiveBench](https://livebench.ai/) GitHub CSVs | Fresh monthly questions, contamination-resistant scores | General (Overall only) | 2026-06-25 | no |
 | `pricing` | [OpenRouter](https://openrouter.ai/api/v1/models) public models API | Live per-token prices → $ per 1M tokens (input/output) | Pricing | live | no |
